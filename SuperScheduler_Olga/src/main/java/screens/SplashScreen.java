@@ -11,6 +11,7 @@ public class SplashScreen extends BaseScreen{
     }
 
     @FindBy(xpath="//*[@resource-id=com.example.svetlana.scheduler:id/app_version_res]")
+
     MobileElement versionTextView;
 
     public String getCurrentVersion(){
