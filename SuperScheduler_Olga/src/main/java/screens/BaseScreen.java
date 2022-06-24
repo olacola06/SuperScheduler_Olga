@@ -12,5 +12,12 @@ public class BaseScreen {
         this.driver = driver;
         PageFactory.initElements(new AppiumFieldDecorator(driver),this);
     }
+    public void type(MobileElement el, String email) {
+        if (email != null) {
+            el.click();
+            el.clear();
+            el.sendKeys(email);
+        }
+    }
 
 }
