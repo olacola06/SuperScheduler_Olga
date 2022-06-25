@@ -13,7 +13,7 @@ public class SplashScreen extends BaseScreen{
         super(driver);
     }
 
-    @FindBy(xpath="//*[@resource-id=com.example.svetlana.scheduler:id/app_version_res]")
+    @FindBy(xpath="//*[@resource-id='com.example.svetlana.scheduler:id/app_version_res']")
     MobileElement versionTextView;
 
     public String getCurrentVersion(){
@@ -24,5 +24,10 @@ public class SplashScreen extends BaseScreen{
                 textToBePresentInElement(versionTextView, version));
         return new LoginScreen(driver);
     }
+
+//    public SplashScreen returnFromLoginScreen(){
+//        versionTextView.isDisplayed();
+//        return this;
+//    }
 
 }

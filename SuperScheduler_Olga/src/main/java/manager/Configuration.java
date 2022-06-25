@@ -22,13 +22,13 @@ public class Configuration {
         capabilities.setCapability("appPackage","com.example.svetlana.scheduler");
         capabilities.setCapability("appActivity",".presentation.splashScreen.SplashScreenActivity");
         capabilities.setCapability("automationName","Appium");
-        capabilities.setCapability("app","C:/Users/Olga/v.0.0.3.apk");
+        //capabilities.setCapability("app","/Users/Olga/v.0.0.3.apk");
 
         driver = new AppiumDriver<MobileElement>(new URL("http://127.0.0.1:4723/wd/hub"),capabilities);
     }
-    @AfterSuite
+
+    @AfterSuite(enabled = false)
     public void tearDown(){
         driver.quit();
     }
-
 }

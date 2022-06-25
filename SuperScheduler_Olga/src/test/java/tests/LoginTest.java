@@ -6,8 +6,14 @@ import screens.LoginScreen;
 
 public class LoginTest extends Configuration {
     @Test
-    public void loginPos(){
+    public void loginPos1(){
+        new LoginScreen(driver).fillEmail("olla@gmail.com").fillPassword("Cd12345$").clickLoginBtn()
+                .isPlusBtnPresentAssert().openMenu().logout();
+    }
 
-        new LoginScreen(driver).fillEmail("olla@gmail.com").fillPassword("Cd12345$").clickLoginBtn();
+    @Test
+    public void loginPos2(){
+        new LoginScreen(driver).fillEmail("Ola@mail.com").fillPassword("qQ12345@").clickLoginBtn()
+                .isPlusBtnPresentAssert().openMenu().logout();
     }
 }
