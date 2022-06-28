@@ -14,6 +14,7 @@ public class HomeScreen extends BaseScreen{
     }
     @FindBy(xpath="//*[@content-desc='Open']")
     MobileElement burgerMenu;
+
     @FindBy (xpath="//*[@resource-id='com.example.svetlana.scheduler:id/nav_fr_logout_container']")
     MobileElement logout;
 
