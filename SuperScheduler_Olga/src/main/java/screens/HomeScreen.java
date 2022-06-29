@@ -21,7 +21,7 @@ public class HomeScreen extends BaseScreen{
     @FindBy(xpath="//*[@resource-id='com.example.svetlana.scheduler:id/fab_main']")
     MobileElement plusButton;
 
-    @FindBy(xpath="")
+    @FindBy(xpath="//*[@resource-id='com.example.svetlana.scheduler:id/fab_add_event']")
     MobileElement eventCreate;
 
     public HomeScreen openMenu(){
@@ -32,6 +32,12 @@ public class HomeScreen extends BaseScreen{
         logout.click();
         return new LoginScreen(driver);
     }
+    public EditCreateEventScreen initEventCreate(){
+        plusButton.click();
+        eventCreate.click();
+        return new EditCreateEventScreen(driver);
+    }
+
     public HomeScreen isPlusBtnPresentAssert(){
         new WebDriverWait(driver,10).until(ExpectedConditions.visibilityOf(plusButton));
         Assert.assertTrue(plusButton.isDisplayed());

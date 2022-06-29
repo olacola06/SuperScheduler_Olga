@@ -10,14 +10,6 @@ import screens.SplashScreen;
 
 public class RegistSuccess extends ConfigurationRealPhone {
 
-//    @BeforeMethod
-//    public void preCondition(){
-//        Boolean check = new LoginScreen(driver).loginBtnIsPresent();
-//        if(check){
-//            new SplashScreen(driver).returnFromLoginScreen();
-//        }
-//    }
-
     int i = (int)(System.currentTimeMillis())/1000%3600;
     @Test
     public void registSuccess1(){

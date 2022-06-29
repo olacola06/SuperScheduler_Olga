@@ -24,10 +24,4 @@ public class SplashScreen extends BaseScreen{
                 textToBePresentInElement(versionTextView, version));
         return new LoginScreen(driver);
     }
-
-//    public SplashScreen returnFromLoginScreen(){
-//        versionTextView.isDisplayed();
-//        return this;
-//    }
-
 }
