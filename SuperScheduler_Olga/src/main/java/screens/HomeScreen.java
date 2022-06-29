@@ -21,6 +21,9 @@ public class HomeScreen extends BaseScreen{
     @FindBy(xpath="//*[@resource-id='com.example.svetlana.scheduler:id/fab_main']")
     MobileElement plusButton;
 
+    @FindBy(xpath="")
+    MobileElement eventCreate;
+
     public HomeScreen openMenu(){
         burgerMenu.click();
         return this;

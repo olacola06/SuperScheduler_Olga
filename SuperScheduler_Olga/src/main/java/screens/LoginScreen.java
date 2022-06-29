@@ -2,6 +2,7 @@ package screens;
 
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileElement;
+import models.User;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -39,9 +40,28 @@ public class LoginScreen extends BaseScreen {
         return new HomeScreen(driver);
     }
 
+    public HomeScreen complexLogin(User user){
+        new WebDriverWait(driver,10).until(ExpectedConditions.visibilityOf(emailEditText));
+        type(emailEditText,user.getEmail());
+        type(passwordEditText, user.getPassword());
+        driver.hideKeyboard();
+        loginButton.click();
+
+        return new HomeScreen(driver);
+    }
+
     public WizardScreen clickLoginBtnForReg() {
         driver.hideKeyboard();
         loginButton.click();
+        return new WizardScreen(driver);
+    }
+    public WizardScreen complexRegist(User user){
+        new WebDriverWait(driver,10).until(ExpectedConditions.visibilityOf(emailEditText));
+        type(emailEditText,user.getEmail());
+        type(passwordEditText, user.getPassword());
+        driver.hideKeyboard();
+        loginButton.click();
+
         return new WizardScreen(driver);
     }
 

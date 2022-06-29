@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="tests.LoginTestAssert" tests="2" skipped="0" failures="0" errors="0" timestamp="2022-06-25T10:21:46" hostname="ARTEMKA" time="19.597">
+<testsuite name="tests.LoginTestAssert" tests="2" skipped="0" failures="0" errors="0" timestamp="2022-06-29T10:11:23" hostname="DESKTOP-KF54E9L" time="21.107">
   <properties/>
-  <testcase name="loginSuccessFirst" classname="tests.LoginTestAssert" time="8.902"/>
-  <testcase name="loginSuccessSecond" classname="tests.LoginTestAssert" time="9.273"/>
+  <testcase name="loginSuccessFirst" classname="tests.LoginTestAssert" time="9.099"/>
+  <testcase name="loginSuccessSecond" classname="tests.LoginTestAssert" time="10.41"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

@@ -2,13 +2,14 @@ package tests;
 
 import lombok.extern.java.Log;
 import manager.Configuration;
+import manager.ConfigurationRealPhone;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Test;
 import screens.HomeScreen;
 import screens.LoginScreen;
 
-public class LoginTestAssert extends Configuration {
+public class LoginTestAssert extends ConfigurationRealPhone {
 
     @Test
     public void loginSuccessFirst(){
