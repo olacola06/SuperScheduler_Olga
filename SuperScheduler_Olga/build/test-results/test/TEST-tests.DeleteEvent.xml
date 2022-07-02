@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="tests.DeleteEvent" tests="2" skipped="0" failures="0" errors="0" timestamp="2022-07-02T17:56:02" hostname="ARTEMKA" time="10.647">
+  <properties/>
+  <testcase name="deleteExistEventFirstInList" classname="tests.DeleteEvent" time="7.011"/>
+  <testcase name="deleteExistEventWIthDetails" classname="tests.DeleteEvent" time="3.631"/>
+  <system-out><![CDATA[20:56:02  INFO  manager.Configuration - Start test->>deleteExistEventFirstInList
+20:56:05  INFO  screens.BaseScreen - 'Started with Amount of events ='  2
+20:56:09  INFO  screens.BaseScreen - 'Finished with Amount of events = ' 1
+20:56:09  INFO  manager.Configuration - Test  deleteExistEventFirstInList finished
+20:56:09  INFO  manager.Configuration - Start test->>deleteExistEventWIthDetails
+20:56:10  INFO  screens.BaseScreen - 'Started with Amount of events = ' 1
+20:56:13  INFO  screens.BaseScreen - 'Finished with Amount of events = ' 0
+20:56:13  INFO  manager.Configuration - Test  deleteExistEventWIthDetails finished
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -8,7 +8,8 @@ import org.testng.annotations.Test;
 import screens.LoginScreen;
 import screens.SplashScreen;
 
-public class RegistSuccess extends ConfigurationRealPhone {
+//public class RegistSuccess extends ConfigurationRealPhone {
+    public class RegistSuccess extends Configuration {
 
     int i = (int)(System.currentTimeMillis())/1000%3600;
     @Test
@@ -26,7 +27,7 @@ public class RegistSuccess extends ConfigurationRealPhone {
 //        new LoginScreen(driver).fillEmail("all"+i+1+"@gmail.com").
 //                fillPassword("As12345$").clickLoginBtnForReg().skipWizard().isPlusBtnPresentAssert()
 //                .openMenu().logout();
-        User user = User.builder().email("all\"+i+1+\"@gmail.com").password("As12345$").build();
+        User user = User.builder().email("all"+i+1+"@gmail.com").password("As12345$").build();
         new LoginScreen(driver).complexRegist(user).skipWizard()
                 .isPlusBtnPresentAssert().openMenu().logout();
     }

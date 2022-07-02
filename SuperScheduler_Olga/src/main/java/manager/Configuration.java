@@ -3,15 +3,31 @@ package manager;
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileElement;
 import org.openqa.selenium.remote.DesiredCapabilities;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
 
+import java.lang.reflect.Method;
 import java.net.MalformedURLException;
 import java.net.URL;
 
 public class Configuration {
 
     protected static AppiumDriver<MobileElement> driver;
+
+    protected Logger logger = LoggerFactory.getLogger(Configuration.class);
+
+    @BeforeMethod
+    public void startLogger(Method method){
+        logger.info("Start test->>"+method.getName());
+    }
+    @AfterMethod
+    public void endLogger(Method m){
+        logger.info("Test  "+m.getName()+" finished");
+    }
 
     @BeforeSuite
     public void setUp() throws MalformedURLException {

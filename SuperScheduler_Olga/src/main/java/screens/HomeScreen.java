@@ -7,6 +7,8 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
+import java.util.List;
+
 public class HomeScreen extends BaseScreen{
 
     public HomeScreen(AppiumDriver<MobileElement> driver){
@@ -24,7 +26,20 @@ public class HomeScreen extends BaseScreen{
     @FindBy(xpath="//*[@resource-id='com.example.svetlana.scheduler:id/fab_add_event']")
     MobileElement eventCreate;
 
-    public HomeScreen openMenu(){
+    @FindBy(xpath="//*[@resource-id='com.example.svetlana.scheduler:id/row_container_main']")
+    List<MobileElement> events;
+    @FindBy(xpath="//*[@resource-id='com.example.svetlana.scheduler:id/row_container_main']")
+    MobileElement eventTextBox;
+
+    @FindBy(xpath="//*[@resource-id='com.example.svetlana.scheduler:id/row_topic_txt']")
+    MobileElement titleText;
+    @FindBy(xpath="//*[@resource-id='com.example.svetlana.scheduler:id/row_topic_txt']")
+    List<MobileElement> titleTextList;
+
+    @FindBy(xpath="//*[@resource-id='com.example.svetlana.scheduler:id/delete_menu']")
+    MobileElement deleteIcon;
+
+     public HomeScreen openMenu(){
         burgerMenu.click();
         return this;
     }
@@ -33,9 +48,42 @@ public class HomeScreen extends BaseScreen{
         return new LoginScreen(driver);
     }
     public EditCreateEventScreen initEventCreate(){
+        new WebDriverWait(driver,10).until(ExpectedConditions.visibilityOf(plusButton));
         plusButton.click();
         eventCreate.click();
         return new EditCreateEventScreen(driver);
+    }
+    public boolean deleteEvent(){
+         new  WebDriverWait(driver,10).until(ExpectedConditions.visibilityOf(plusButton));
+         int startAmount = events.size();
+         logger.info("'Started with Amount of events ='  "+startAmount);
+         events.get(0).click();
+         deleteIcon.click();
+         int finishAmount = events.size();
+         logger.info("'Finished with Amount of events = ' "+finishAmount);
+         boolean check = checkIsEventDeleted(startAmount,finishAmount);
+         return check;
+    }
+    public HomeScreen deleteEventDetails(String details){
+        int startAmount = titleTextList.size();
+        logger.info("'Started with Amount of events = ' "+startAmount);
+         for(MobileElement el:titleTextList){
+           if(el.getText().equals(details)){
+                 eventTextBox.click();
+                 deleteIcon.click();
+             }
+         }
+        int finishAmount = titleTextList.size();
+        logger.info("'Finished with Amount of events = ' "+finishAmount);
+        checkIsEventDeleted(startAmount,finishAmount);
+        Assert.assertTrue(checkIsEventDeleted(startAmount,finishAmount));
+        return new HomeScreen(driver);
+    }
+
+    public boolean checkIsEventDeleted(int startAmount, int finishAmount) {
+         if(startAmount-finishAmount==1){
+             return true;
+         }return false;
     }
 
     public HomeScreen isPlusBtnPresentAssert(){
