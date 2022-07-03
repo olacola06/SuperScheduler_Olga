@@ -24,11 +24,11 @@ public class DeleteEvent extends Configuration {
     }
     @Test(enabled = true)
     public void deleteExistEventWIthDetails(){
-        new HomeScreen(driver).deleteEventDetails("Tomorrow");
+        new HomeScreen(driver).deleteEventDetails("Low");
 
     }
-    @AfterClass
-    public void postCondition(){
-        new HomeScreen(driver).openMenu().logout();
-    }
+//    @AfterClass
+//    public void postCondition(){
+//        new HomeScreen(driver).openMenu().logout();
+//    }
 }

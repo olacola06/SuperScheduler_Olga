@@ -65,15 +65,26 @@ public class HomeScreen extends BaseScreen{
          return check;
     }
     public HomeScreen deleteEventDetails(String details){
-        int startAmount = titleTextList.size();
+        new  WebDriverWait(driver,10).until(ExpectedConditions.visibilityOf(plusButton));
+        int startAmount = events.size();
         logger.info("'Started with Amount of events = ' "+startAmount);
-         for(MobileElement el:titleTextList){
-           if(el.getText().equals(details)){
-                 eventTextBox.click();
+         for(MobileElement el:titleTextList) {
+             if (el.getText().equals(details)) {
+//                 int temp = titleTextList.indexOf(el.getText());
+//                 logger.info("indexDelete = " + temp);
+//                 events.get(temp).click();
+                 el.click();
                  deleteIcon.click();
              }
          }
-        int finishAmount = titleTextList.size();
+//        for(MobileElement el:events){
+//           if(titleText.getText().equals(details)){
+//                    el.click();
+//                    deleteIcon.click();
+//                }
+//            }
+
+        int finishAmount = events.size();
         logger.info("'Finished with Amount of events = ' "+finishAmount);
         checkIsEventDeleted(startAmount,finishAmount);
         Assert.assertTrue(checkIsEventDeleted(startAmount,finishAmount));
