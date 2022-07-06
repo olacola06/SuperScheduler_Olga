@@ -8,8 +8,8 @@ import org.testng.annotations.Test;
 import screens.LoginScreen;
 import screens.SplashScreen;
 
-//public class RegistSuccess extends ConfigurationRealPhone {
-    public class RegistSuccess extends Configuration {
+      public class RegistSuccess extends ConfigurationRealPhone {
+    //public class RegistSuccess extends Configuration {
 
     int i = (int)(System.currentTimeMillis())/1000%3600;
     @Test

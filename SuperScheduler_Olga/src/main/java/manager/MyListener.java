@@ -1,12 +1,16 @@
 package manager;
 
+import com.google.common.io.Files;
 import io.appium.java_client.events.api.general.AppiumWebDriverEventListener;
-import org.openqa.selenium.By;
-import org.openqa.selenium.OutputType;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileReader;
+import java.io.IOException;
+import java.sql.Savepoint;
 
 public class MyListener implements AppiumWebDriverEventListener {
 
@@ -84,11 +88,12 @@ public class MyListener implements AppiumWebDriverEventListener {
 
     @Override
     public void beforeFindBy(By by, WebElement element, WebDriver driver) {
-
+        logger.info("start search element by locator:->>"+by);
     }
 
     @Override
     public void afterFindBy(By by, WebElement element, WebDriver driver) {
+        logger.info("element with locator->>"+by+" was found");
 
     }
 
@@ -134,6 +139,21 @@ public class MyListener implements AppiumWebDriverEventListener {
 
     @Override
     public void onException(Throwable throwable, WebDriver driver) {
+        logger.info("Something went wrong->>"+driver.getCurrentUrl());
+        logger.info("There is a problem->>"+throwable.getMessage());
+        logger.info(String.valueOf(throwable.fillInStackTrace()));
+
+        int i = (int)System.currentTimeMillis()/1000%3600;
+        String screenshotToSave = "src/test/screenshots/screenshot"+i+".png";
+        //String screenshotToSave ="C:/Users/Olga/GitHub/SuperScheduler_Olga/SuperScheduler_Olga/src/test/screenshots/screenshot"
+               // +i+".png";
+
+        File screenshot = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+        try {
+            Files.copy(screenshot,new File(screenshotToSave));
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
 
     }
 

@@ -6,8 +6,8 @@ import models.User;
 import org.testng.annotations.Test;
 import screens.LoginScreen;
 
-//  public class LoginTest extends ConfigurationRealPhone {
-    public class LoginTest extends Configuration {
+     public class LoginTest extends ConfigurationRealPhone {
+    //public class LoginTest extends Configuration {
     @Test
     public void loginPos1(){
         logger.info("Test with email->>'olla@gmail.com' and password->> 'Cd12345$'");

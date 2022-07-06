@@ -1,6 +1,7 @@
 package tests;
 
 import manager.Configuration;
+import manager.ConfigurationRealPhone;
 import models.User;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
@@ -8,7 +9,8 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import screens.*;
 
-public class DeleteEvent extends Configuration {
+//public class DeleteEvent extends Configuration {
+    public class DeleteEvent extends ConfigurationRealPhone {
 
     @BeforeClass
     public void preCondition(){
@@ -24,11 +26,11 @@ public class DeleteEvent extends Configuration {
     }
     @Test(enabled = true)
     public void deleteExistEventWIthDetails(){
-        new HomeScreen(driver).deleteEventDetails("Low");
+        new HomeScreen(driver).deleteEventDetails("Next year");
 
     }
-//    @AfterClass
-//    public void postCondition(){
-//        new HomeScreen(driver).openMenu().logout();
-//    }
+    @AfterClass
+    public void postCondition(){
+        new HomeScreen(driver).openMenu().logout();
+    }
 }

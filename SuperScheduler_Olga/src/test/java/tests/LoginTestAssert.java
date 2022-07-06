@@ -9,8 +9,8 @@ import org.testng.annotations.Test;
 import screens.HomeScreen;
 import screens.LoginScreen;
 
-//public class LoginTestAssert extends ConfigurationRealPhone {
-    public class LoginTestAssert extends Configuration {
+      public class LoginTestAssert extends ConfigurationRealPhone {
+    //public class LoginTestAssert extends Configuration {
 
     @Test
     public void loginSuccessFirst(){

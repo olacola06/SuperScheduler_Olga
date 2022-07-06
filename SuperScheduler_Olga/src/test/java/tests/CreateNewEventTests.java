@@ -12,8 +12,8 @@ import org.testng.annotations.Test;
 import screens.HomeScreen;
 import screens.LoginScreen;
 
-//public class CreateNewEventTests extends ConfigurationRealPhone {
-    public class CreateNewEventTests extends Configuration {
+    public class CreateNewEventTests extends ConfigurationRealPhone {
+    //public class CreateNewEventTests extends Configuration {
 
     @BeforeClass
     public void preConditions(){
@@ -21,20 +21,20 @@ import screens.LoginScreen;
                 .email("olla@gmail.com").password("Cd12345$").build());
     }
 
-    @Test(invocationCount = 1)
+    @Test(invocationCount = 2)
     public void addNewEventSuccess(){
         Event event = Event.builder().title("Reality").type("Full-day").breaks(3)
                 .wage(50).build();
-        logger.info("New Event with details:->> Title 'Real', Type 'Full-day', Wage= '50'");
+        logger.info("New Event with details:->> Title 'Reality', Type 'Full-day', Wage= '50'");
         new HomeScreen(driver).initEventCreate().createNewEvent(event).isPlusBtnPresentAssert();
         logger.info("Event was added Successfully");
 
     }
-    @Test
+    @Test(invocationCount = 2)
     public void addNewEventSuccessSecond(){
-        Event event = Event.builder().title("Next day").type("Half-day").breaks(2)
+        Event event = Event.builder().title("Next year").type("Half-day").breaks(2)
                 .wage(30).build();
-        logger.info("New Event with details:->> Title 'Next day', Type 'Half-day', Wage= '30'");
+        logger.info("New Event with details:->> Title 'Next year', Type 'Half-day', Wage= '30'");
         boolean isPlusBtnPresent = new HomeScreen(driver).initEventCreate().createNewEvent(event)
                 .isPlusBtnPresent();
         Assert.assertTrue(isPlusBtnPresent);
@@ -43,9 +43,11 @@ import screens.LoginScreen;
     }
     @Test
     public void addNewEventSuccessDate(){
+        logger.info("New Event with details:->> 'Low', Type 'Half-day', Wage= '30'");
         new HomeScreen(driver).initEventCreate().createNewEventDate(Event.builder().
                         title("Low").type("Half-day").breaks(2).wage(30).build())
                 .isPlusBtnPresentAssert();
+        logger.info("Event was added Successfully");
     }
 
     @AfterClass
