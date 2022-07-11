@@ -43,7 +43,7 @@ public class ConfigurationRealPhone {
         driver = new AppiumDriver<MobileElement>(new URL("http://127.0.0.1:4723/wd/hub"),capabilities);
         driver = EventFiringWebDriverFactory.getEventFiringWebDriver(driver, new MyListener());
     }
-    @AfterSuite
+    @AfterSuite(enabled = false)
     public void tearDown(){
         driver.quit();
     }

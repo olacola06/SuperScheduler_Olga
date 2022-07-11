@@ -1,0 +1,18 @@
+18:03:47  INFO  manager.ConfigurationRealPhone - Method to be tested:->>registrationWrongPass
+18:03:50  INFO  manager.MyListener - start search element by locator:->>By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/log_email_input']
+18:03:51  INFO  manager.MyListener - element with locator->>By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/log_email_input'] was found
+18:03:51  INFO  manager.MyListener - start search element by locator:->>By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/log_email_input']
+18:03:52  INFO  manager.MyListener - element with locator->>By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/log_email_input'] was found
+18:03:53  INFO  manager.MyListener - start search element by locator:->>By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/log_email_input']
+18:03:53  INFO  manager.MyListener - element with locator->>By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/log_email_input'] was found
+18:03:54  INFO  manager.MyListener - start search element by locator:->>By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/log_email_input']
+18:03:54  INFO  manager.MyListener - element with locator->>By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/log_email_input'] was found
+18:03:55  INFO  manager.MyListener - start search element by locator:->>By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/log_password_input']
+18:03:56  INFO  manager.MyListener - element with locator->>By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/log_password_input'] was found
+18:03:57  INFO  manager.MyListener - start search element by locator:->>By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/log_password_input']
+18:03:57  INFO  manager.MyListener - element with locator->>By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/log_password_input'] was found
+18:03:57  INFO  manager.MyListener - start search element by locator:->>By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/log_password_input']
+18:03:58  INFO  manager.MyListener - element with locator->>By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/log_password_input'] was found
+18:04:00  INFO  manager.MyListener - start search element by locator:->>By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/login_btn']
+18:04:01  INFO  manager.MyListener - element with locator->>By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/login_btn'] was found
+18:04:02  INFO  manager.ConfigurationRealPhone - Test named:->>registrationWrongPass finished

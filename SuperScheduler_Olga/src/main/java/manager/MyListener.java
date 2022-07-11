@@ -10,6 +10,7 @@ import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
+import java.lang.reflect.UndeclaredThrowableException;
 import java.sql.Savepoint;
 
 public class MyListener implements AppiumWebDriverEventListener {
@@ -88,12 +89,12 @@ public class MyListener implements AppiumWebDriverEventListener {
 
     @Override
     public void beforeFindBy(By by, WebElement element, WebDriver driver) {
-        logger.info("start search element by locator:->>"+by);
+        logger.info("start search element by locator:->>" +by);
     }
 
     @Override
     public void afterFindBy(By by, WebElement element, WebDriver driver) {
-        logger.info("element with locator->>"+by+" was found");
+        logger.info("element with locator->>" +by +" was found");
 
     }
 
@@ -151,7 +152,7 @@ public class MyListener implements AppiumWebDriverEventListener {
         File screenshot = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
         try {
             Files.copy(screenshot,new File(screenshotToSave));
-        } catch (IOException e) {
+        } catch (UndeclaredThrowableException | IOException e) {
             e.printStackTrace();
         }
 

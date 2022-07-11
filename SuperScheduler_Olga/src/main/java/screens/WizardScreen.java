@@ -18,5 +18,6 @@ public class WizardScreen extends BaseScreen{
         skipWizard.click();
         return new HomeScreen(driver);
     }
+
 }
 

@@ -28,8 +28,7 @@ public class LoginScreen extends BaseScreen {
         type(emailEditText, email);
         return this;
     }
-
-    public LoginScreen fillPassword(String password) {
+     public LoginScreen fillPassword(String password) {
         type(passwordEditText, password);
         return this;
     }
