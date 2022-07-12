@@ -1,11 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="tests.LoginTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2022-07-12T15:46:27" hostname="DESKTOP-KF54E9L" time="57.056">
-  <properties/>
-  <testcase name="loginPos1" classname="tests.LoginTest" time="21.205"/>
-  <testcase name="loginPos2" classname="tests.LoginTest" time="13.777"/>
-  <testcase name="loginWrongEmailFormat" classname="tests.LoginTest" time="12.638"/>
-  <testcase name="loginWrongPasswordCorrectFormat" classname="tests.LoginTest" time="9.412"/>
-  <system-out><![CDATA[18:46:27  INFO  manager.ConfigurationRealPhone - Method to be tested:->>loginPos1
+18:46:27  INFO  manager.ConfigurationRealPhone - Method to be tested:->>loginPos1
 18:46:27  INFO  manager.ConfigurationRealPhone - Test with email->>'olla@gmail.com' and password->> 'Cd12345$'
 18:46:28  INFO  manager.MyListener - start search element by locator:->>By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/log_email_input']
 18:46:29  INFO  manager.MyListener - element with locator->>By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/log_email_input'] was found
@@ -97,8 +90,4 @@
 18:47:20  INFO  manager.MyListener - element with locator->>By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/log_password_input'] was found
 18:47:21  INFO  manager.MyListener - start search element by locator:->>By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/login_btn']
 18:47:22  INFO  manager.MyListener - element with locator->>By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/login_btn'] was found
-Error->>! 
 18:47:24  INFO  manager.ConfigurationRealPhone - Test named:->>loginWrongPasswordCorrectFormat finished
-]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>

@@ -32,9 +32,7 @@ import screens.LoginScreen;
     public void loginWrongEmailFormat(){
         User user = User.builder().email("Olamail.com").password("qQ12345@").build();
         new LoginScreen(driver).fillEmail(user.getEmail()).fillPassword(user.getPassword()).clickLoginBtnLoginNeg()
-                .clickOnRedSign();
-
-        new LoginScreen(driver).alertPresence();
+                .clickOnRedSign().loginButtonPresent();
 
     }
 

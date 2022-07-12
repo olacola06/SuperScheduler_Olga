@@ -1,0 +1,39 @@
+18:42:19  INFO  manager.ConfigurationRealPhone - Method to be tested:->>loginPos1
+18:42:19  INFO  manager.ConfigurationRealPhone - Test with email->>'olla@gmail.com' and password->> 'Cd12345$'
+18:42:21  INFO  manager.MyListener - start search element by locator:->>By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/log_email_input']
+18:42:23  INFO  manager.MyListener - element with locator->>By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/log_email_input'] was found
+18:42:24  INFO  manager.MyListener - start search element by locator:->>By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/log_email_input']
+18:42:25  INFO  manager.MyListener - element with locator->>By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/log_email_input'] was found
+18:42:27  INFO  manager.MyListener - start search element by locator:->>By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/log_email_input']
+18:42:27  INFO  manager.MyListener - element with locator->>By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/log_email_input'] was found
+18:42:27  INFO  manager.MyListener - start search element by locator:->>By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/log_email_input']
+18:42:28  INFO  manager.MyListener - element with locator->>By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/log_email_input'] was found
+18:42:28  INFO  manager.MyListener - start search element by locator:->>By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/log_password_input']
+18:42:29  INFO  manager.MyListener - element with locator->>By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/log_password_input'] was found
+18:42:31  INFO  manager.MyListener - start search element by locator:->>By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/log_password_input']
+18:42:31  INFO  manager.MyListener - element with locator->>By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/log_password_input'] was found
+18:42:32  INFO  manager.MyListener - start search element by locator:->>By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/log_password_input']
+18:42:33  INFO  manager.MyListener - element with locator->>By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/log_password_input'] was found
+18:42:35  INFO  manager.MyListener - start search element by locator:->>By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/login_btn']
+18:42:36  INFO  manager.MyListener - element with locator->>By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/login_btn'] was found
+18:42:39  INFO  manager.MyListener - start search element by locator:->>By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/fab_main']
+18:42:41  INFO  manager.MyListener - element with locator->>By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/fab_main'] was found
+18:42:42  INFO  manager.MyListener - There is a problem->>An unknown server-side error occurred while processing the command. Original error: Could not proxy command to remote server. Original error: Error: socket hang up
+Build info: version: '4.0.0-alpha-1', revision: 'd1d3728cae', time: '2019-04-24T13:42:21'
+System info: host: 'DESKTOP-KF54E9L', ip: '192.168.42.118', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_321'
+Driver info: io.appium.java_client.AppiumDriver
+Capabilities {appActivity: .presentation.splashScreen...., appPackage: com.example.svetlana.scheduler, automationName: Appium, databaseEnabled: false, desired: {appActivity: .presentation.splashScreen...., appPackage: com.example.svetlana.scheduler, automationName: Appium, deviceName: R58N75HPY8E, platformName: android, platformVersion: 12}, deviceApiLevel: 31, deviceManufacturer: samsung, deviceModel: SM-N985F, deviceName: R58N75HPY8E, deviceScreenDensity: 420, deviceScreenSize: 1080x2316, deviceUDID: R58N75HPY8E, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 2.625, platform: LINUX, platformName: Android, platformVersion: 12, statBarHeight: 67, takesScreenshot: true, viewportRect: {height: 2056, left: 0, top: 67, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: 17a89651-2aa6-4490-a08d-5637fddf4477
+18:42:42  INFO  manager.MyListener - We have a problem -->org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: Could not proxy command to remote server. Original error: Error: socket hang up
+Build info: version: '4.0.0-alpha-1', revision: 'd1d3728cae', time: '2019-04-24T13:42:21'
+System info: host: 'DESKTOP-KF54E9L', ip: '192.168.42.118', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_321'
+Driver info: io.appium.java_client.AppiumDriver
+Capabilities {appActivity: .presentation.splashScreen...., appPackage: com.example.svetlana.scheduler, automationName: Appium, databaseEnabled: false, desired: {appActivity: .presentation.splashScreen...., appPackage: com.example.svetlana.scheduler, automationName: Appium, deviceName: R58N75HPY8E, platformName: android, platformVersion: 12}, deviceApiLevel: 31, deviceManufacturer: samsung, deviceModel: SM-N985F, deviceName: R58N75HPY8E, deviceScreenDensity: 420, deviceScreenSize: 1080x2316, deviceUDID: R58N75HPY8E, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 2.625, platform: LINUX, platformName: Android, platformVersion: 12, statBarHeight: 67, takesScreenshot: true, viewportRect: {height: 2056, left: 0, top: 67, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: 17a89651-2aa6-4490-a08d-5637fddf4477
+18:42:42  INFO  manager.ConfigurationRealPhone - Test named:->>loginPos1 finished
+18:42:42  INFO  manager.ConfigurationRealPhone - Method to be tested:->>loginPos2
+18:42:43  INFO  manager.ConfigurationRealPhone - Test named:->>loginPos2 finished
+18:42:43  INFO  manager.ConfigurationRealPhone - Method to be tested:->>loginWrongEmailFormat
+18:42:43  INFO  manager.ConfigurationRealPhone - Test named:->>loginWrongEmailFormat finished
+18:42:43  INFO  manager.ConfigurationRealPhone - Method to be tested:->>loginWrongPasswordCorrectFormat
+18:42:43  INFO  manager.ConfigurationRealPhone - Test named:->>loginWrongPasswordCorrectFormat finished
