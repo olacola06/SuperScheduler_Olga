@@ -17,7 +17,6 @@ import java.net.URL;
 
 public class ConfigurationRealPhone {
     protected static AppiumDriver<MobileElement> driver;
-
     protected Logger logger = LoggerFactory.getLogger(ConfigurationRealPhone.class);
 
     @BeforeMethod

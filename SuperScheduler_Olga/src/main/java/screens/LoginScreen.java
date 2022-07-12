@@ -2,7 +2,13 @@ package screens;
 
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileElement;
+import io.appium.java_client.TouchAction;
+import io.appium.java_client.touch.offset.PointOption;
+import lombok.extern.java.Log;
 import models.User;
+import org.openqa.selenium.Alert;
+import org.openqa.selenium.Point;
+import org.openqa.selenium.Rectangle;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -38,6 +44,12 @@ public class LoginScreen extends BaseScreen {
         loginButton.click();
         return new HomeScreen(driver);
     }
+    public boolean clickLoginBtnForNegativeTests(){
+        driver.hideKeyboard();
+        loginButton.click();
+        pause(2);
+        return (loginButton.isDisplayed());
+    }
 
     public HomeScreen complexLogin(User user){
         new WebDriverWait(driver,10).until(ExpectedConditions.visibilityOf(emailEditText));
@@ -63,9 +75,34 @@ public class LoginScreen extends BaseScreen {
 
         return new WizardScreen(driver);
     }
+    public LoginScreen alertPresence(){
+        Alert alert = new WebDriverWait(driver,5).until(ExpectedConditions.alertIsPresent());
+        if (alert==null){
+            System.out.println("There is no alert");
+        }
+        else{
+            driver.switchTo().alert();
+        }
+        String message = alert.getText();
+        System.out.println("Error->>! "+message);
+        alert.accept();
+        return new LoginScreen(driver);
+    }
 
-    public boolean loginBtnIsPresent(){
-        return loginButton.isDisplayed();
+    public LoginScreen clickLoginBtnLoginNeg() {
+        driver.hideKeyboard();
+        loginButton.click();
+        return new LoginScreen(driver);
+    }
+
+    public LoginScreen clickOnRedSign() {
+        pause(2);
+        Rectangle rect = emailEditText.getRect();
+        int xTo = rect.getX() + rect.getWidth()/100*99;
+        int yTo = rect.getY()+rect.getHeight()/2;
+        TouchAction<?> action = new TouchAction<>(driver);
+        action.moveTo(PointOption.point(xTo,yTo)).press(PointOption.point(xTo,yTo)).release().perform();
+        return new LoginScreen(driver);
     }
 
 }

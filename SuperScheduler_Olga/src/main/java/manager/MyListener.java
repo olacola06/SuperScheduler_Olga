@@ -6,12 +6,11 @@ import org.openqa.selenium.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import java.io.BufferedReader;
 import java.io.File;
-import java.io.FileReader;
+
 import java.io.IOException;
-import java.lang.reflect.UndeclaredThrowableException;
-import java.sql.Savepoint;
+
+
 
 public class MyListener implements AppiumWebDriverEventListener {
 
@@ -140,9 +139,9 @@ public class MyListener implements AppiumWebDriverEventListener {
 
     @Override
     public void onException(Throwable throwable, WebDriver driver) {
-        logger.info("Something went wrong->>"+driver.getCurrentUrl());
         logger.info("There is a problem->>"+throwable.getMessage());
-        logger.info(String.valueOf(throwable.fillInStackTrace()));
+        //logger.info(String.valueOf(throwable.fillInStackTrace()));
+        logger.info("We have a problem -->"+throwable.fillInStackTrace());
 
         int i = (int)System.currentTimeMillis()/1000%3600;
         String screenshotToSave = "src/test/screenshots/screenshot"+i+".png";
@@ -152,7 +151,7 @@ public class MyListener implements AppiumWebDriverEventListener {
         File screenshot = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
         try {
             Files.copy(screenshot,new File(screenshotToSave));
-        } catch (UndeclaredThrowableException | IOException e) {
+        } catch (IOException e) {
             e.printStackTrace();
         }
 

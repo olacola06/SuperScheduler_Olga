@@ -1,5 +1,6 @@
 package tests;
 
+import lombok.extern.java.Log;
 import manager.Configuration;
 import manager.ConfigurationRealPhone;
 import models.User;
@@ -21,4 +22,20 @@ import screens.LoginScreen;
         new LoginScreen(driver).complexLogin(user).isPlusBtnPresentAssert().openMenu().logout();
 
     }
+    @Test
+    public void loginWrongPasswordCorrectFormat() {
+        User user = User.builder().email("Ola@mail.com").password("rQ12345@").build();
+        new LoginScreen(driver).fillEmail(user.getEmail()).fillPassword(user.getPassword()).clickLoginBtnLoginNeg();
+        new LoginScreen(driver).alertPresence();
+    }
+    @Test
+    public void loginWrongEmailFormat(){
+        User user = User.builder().email("Olamail.com").password("qQ12345@").build();
+        new LoginScreen(driver).fillEmail(user.getEmail()).fillPassword(user.getPassword()).clickLoginBtnLoginNeg()
+                .clickOnRedSign();
+
+        new LoginScreen(driver).alertPresence();
+
+    }
+
 }
