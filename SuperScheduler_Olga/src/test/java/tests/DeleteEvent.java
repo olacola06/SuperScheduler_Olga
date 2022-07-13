@@ -25,11 +25,11 @@ import screens.*;
         Assert.assertTrue(check);
     }
     @Test(enabled = true)
-    public void deleteExistEventWIthDetails(){
-        new HomeScreen(driver).deleteEventDetails("Next year");
+    public void deleteExistEventWithDetails(){
+        new HomeScreen(driver).deleteEventDetails("Low");
 
     }
-    @AfterClass
+    @AfterClass(enabled = false)
     public void postCondition(){
         new HomeScreen(driver).openMenu().logout();
     }

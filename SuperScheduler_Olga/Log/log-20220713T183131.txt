@@ -1,0 +1,47 @@
+18:32:03  INFO  manager.MyListener - start search element by locator:->>By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/log_email_input']
+18:32:04  INFO  manager.MyListener - element with locator->>By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/log_email_input'] was found
+18:32:05  INFO  manager.MyListener - start search element by locator:->>By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/log_email_input']
+18:32:05  INFO  manager.MyListener - element with locator->>By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/log_email_input'] was found
+18:32:06  INFO  manager.MyListener - start search element by locator:->>By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/log_email_input']
+18:32:07  INFO  manager.MyListener - element with locator->>By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/log_email_input'] was found
+18:32:07  INFO  manager.MyListener - start search element by locator:->>By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/log_email_input']
+18:32:08  INFO  manager.MyListener - element with locator->>By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/log_email_input'] was found
+18:32:08  INFO  manager.MyListener - start search element by locator:->>By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/log_password_input']
+18:32:09  INFO  manager.MyListener - element with locator->>By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/log_password_input'] was found
+18:32:10  INFO  manager.MyListener - start search element by locator:->>By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/log_password_input']
+18:32:10  INFO  manager.MyListener - element with locator->>By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/log_password_input'] was found
+18:32:11  INFO  manager.MyListener - start search element by locator:->>By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/log_password_input']
+18:32:12  INFO  manager.MyListener - element with locator->>By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/log_password_input'] was found
+18:32:14  INFO  manager.MyListener - start search element by locator:->>By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/login_btn']
+18:32:14  INFO  manager.MyListener - element with locator->>By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/login_btn'] was found
+18:32:17  INFO  manager.ConfigurationRealPhone - Method to be tested:->>deleteExistEventWithDetails
+18:32:17  INFO  manager.MyListener - start search element by locator:->>By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/fab_main']
+18:32:18  INFO  manager.MyListener - element with locator->>By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/fab_main'] was found
+18:32:20  INFO  manager.MyListener - start search element by locator:->>By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/row_container_main']
+18:32:22  INFO  manager.MyListener - element with locator->>By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/row_container_main'] was found
+18:32:22  INFO  screens.BaseScreen - 'Started with Amount of events = ' 6
+18:32:22  INFO  manager.MyListener - start search element by locator:->>By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/row_topic_txt']
+18:32:24  INFO  manager.MyListener - element with locator->>By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/row_topic_txt'] was found
+18:32:24  INFO  manager.MyListener - start search element by locator:->>By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/row_container_main']
+18:32:25  INFO  manager.MyListener - element with locator->>By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/row_container_main'] was found
+18:32:25  INFO  manager.MyListener - start search element by locator:->>By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/delete_menu']
+18:32:27  INFO  manager.MyListener - element with locator->>By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/delete_menu'] was found
+18:32:29  INFO  manager.MyListener - There is a problem->>Cached elements 'By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/row_topic_txt']' do not exist in DOM anymore
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '4.0.0-alpha-1', revision: 'd1d3728cae', time: '2019-04-24T13:42:21'
+System info: host: 'DESKTOP-KF54E9L', ip: '192.168.42.118', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_321'
+Driver info: io.appium.java_client.AppiumDriver
+Capabilities {appActivity: .presentation.splashScreen...., appPackage: com.example.svetlana.scheduler, automationName: Appium, databaseEnabled: false, desired: {appActivity: .presentation.splashScreen...., appPackage: com.example.svetlana.scheduler, automationName: Appium, deviceName: R58N75HPY8E, platformName: android, platformVersion: 12}, deviceApiLevel: 31, deviceManufacturer: samsung, deviceModel: SM-N985F, deviceName: R58N75HPY8E, deviceScreenDensity: 420, deviceScreenSize: 1080x2316, deviceUDID: R58N75HPY8E, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 2.625, platform: LINUX, platformName: Android, platformVersion: 12, statBarHeight: 67, takesScreenshot: true, viewportRect: {height: 2056, left: 0, top: 67, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: a4be4368-393e-4073-94d9-2ffc7fe2103b
+18:32:29  INFO  manager.MyListener - We have a problem -->org.openqa.selenium.StaleElementReferenceException: Cached elements 'By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/row_topic_txt']' do not exist in DOM anymore
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '4.0.0-alpha-1', revision: 'd1d3728cae', time: '2019-04-24T13:42:21'
+System info: host: 'DESKTOP-KF54E9L', ip: '192.168.42.118', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_321'
+Driver info: io.appium.java_client.AppiumDriver
+Capabilities {appActivity: .presentation.splashScreen...., appPackage: com.example.svetlana.scheduler, automationName: Appium, databaseEnabled: false, desired: {appActivity: .presentation.splashScreen...., appPackage: com.example.svetlana.scheduler, automationName: Appium, deviceName: R58N75HPY8E, platformName: android, platformVersion: 12}, deviceApiLevel: 31, deviceManufacturer: samsung, deviceModel: SM-N985F, deviceName: R58N75HPY8E, deviceScreenDensity: 420, deviceScreenSize: 1080x2316, deviceUDID: R58N75HPY8E, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 2.625, platform: LINUX, platformName: Android, platformVersion: 12, statBarHeight: 67, takesScreenshot: true, viewportRect: {height: 2056, left: 0, top: 67, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: a4be4368-393e-4073-94d9-2ffc7fe2103b
+18:32:29  INFO  manager.ConfigurationRealPhone - Test named:->>deleteExistEventWithDetails finished
+18:32:29  INFO  manager.MyListener - start search element by locator:->>By.xpath: //*[@content-desc='Open']
+18:32:31  INFO  manager.MyListener - element with locator->>By.xpath: //*[@content-desc='Open'] was found
+18:32:31  INFO  manager.MyListener - start search element by locator:->>By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/nav_fr_logout_container']
+18:32:32  INFO  manager.MyListener - element with locator->>By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/nav_fr_logout_container'] was found

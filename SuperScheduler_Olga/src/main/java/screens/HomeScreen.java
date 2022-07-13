@@ -61,37 +61,38 @@ public class HomeScreen extends BaseScreen{
          deleteIcon.click();
          int finishAmount = events.size();
          logger.info("'Finished with Amount of events = ' "+finishAmount);
-         boolean check = checkIsEventDeleted(startAmount,finishAmount);
+         boolean check = checkIfEventDeleted(startAmount,finishAmount);
          return check;
     }
     public HomeScreen deleteEventDetails(String details){
         new  WebDriverWait(driver,10).until(ExpectedConditions.visibilityOf(plusButton));
         int startAmount = events.size();
         logger.info("'Started with Amount of events = ' "+startAmount);
-        for(MobileElement e:events){
-            if(titleText.getText().equals(details)){
-                titleText.click();
-                deleteIcon.click();
-                pause(3);
+//        for(MobileElement e:events){
+//            if(titleText.getText().equals(details)){
+//                titleText.click();
+//                deleteIcon.click();
+//                pause(3);
 
-//         for(MobileElement el:titleTextList) {
-//             if (el.getText().equals(details)) {
-//                 int temp = titleTextList.indexOf(el);
+         for(MobileElement el:titleTextList) {
+             if (el.getText().equals(details)) {
+                // int temp = titleTextList.indexOf(el);
+                 int temp = events.indexOf(eventTextBox);
 //                 logger.info("indexDelete = " + temp);
-//                 events.get(temp).click();
-//                 el.click();
-//                 deleteIcon.click();
-//                 pause(5);
+                 events.get(temp).click();
+                 //el.click();
+                 deleteIcon.click();
+                 //pause(3);
              }
          }
+        pause(5);
         int finishAmount = events.size();
         logger.info("'Finished with Amount of events = ' "+finishAmount);
-        checkIsEventDeleted(startAmount,finishAmount);
-        Assert.assertTrue(checkIsEventDeleted(startAmount,finishAmount));
+        Assert.assertTrue(checkIfEventDeleted(startAmount,finishAmount));
         return new HomeScreen(driver);
     }
 
-    public boolean checkIsEventDeleted(int startAmount, int finishAmount) {
+    public boolean checkIfEventDeleted(int startAmount, int finishAmount) {
          if(startAmount-finishAmount==1){
              return true;
          }return false;

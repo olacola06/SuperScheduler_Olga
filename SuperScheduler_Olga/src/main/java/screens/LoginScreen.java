@@ -45,12 +45,6 @@ public class LoginScreen extends BaseScreen {
         loginButton.click();
         return new HomeScreen(driver);
     }
-    public boolean clickLoginBtnForNegativeTests(){
-        driver.hideKeyboard();
-        loginButton.click();
-        pause(2);
-        return (loginButton.isDisplayed());
-    }
 
     public HomeScreen complexLogin(User user){
         new WebDriverWait(driver,10).until(ExpectedConditions.visibilityOf(emailEditText));
@@ -85,7 +79,8 @@ public class LoginScreen extends BaseScreen {
             driver.switchTo().alert();
         }
         String message = alert.getText();
-        System.out.println("Error->>! "+message);
+        //System.out.println(message.toString());
+        logger.info("Error->>! "+message.toString());
         alert.accept();
         return new LoginScreen(driver);
     }
@@ -94,6 +89,12 @@ public class LoginScreen extends BaseScreen {
         driver.hideKeyboard();
         loginButton.click();
         return new LoginScreen(driver);
+    }
+    public boolean clickLoginBtnForNegativeTests(){
+        driver.hideKeyboard();
+        loginButton.click();
+        pause(2);
+        return (loginButton.isDisplayed());
     }
 
     public LoginScreen clickOnRedSign() {
@@ -106,10 +107,10 @@ public class LoginScreen extends BaseScreen {
         action.tap(PointOption.point(xTo,yTo)).release().perform();
         return new LoginScreen(driver);
     }
-
     public LoginScreen loginButtonPresent() {
         driver.hideKeyboard();
         Assert.assertTrue(loginButton.isDisplayed());
         return new LoginScreen(driver);
     }
+
 }

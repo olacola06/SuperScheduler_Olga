@@ -40,17 +40,23 @@ public class RegistrationTests extends ConfigurationRealPhone {
     @Test
     public void registrationWrongEmail() {
         User user = User.builder().email("All@gmailcom").password("As12345$").build();
-        boolean res = new LoginScreen(driver).fillEmail(user.getEmail()).fillPassword(user.getPassword())
-                .clickLoginBtnForNegativeTests();
-        Assert.assertTrue(res);
+//        boolean res = new LoginScreen(driver).fillEmail(user.getEmail()).fillPassword(user.getPassword())
+//                .clickLoginBtnForNegativeTests();
+//        Assert.assertTrue(res);
+        new LoginScreen(driver).fillEmail(user.getEmail()).fillPassword(user.getPassword()).clickLoginBtnLoginNeg()
+                        .clickOnRedSign().loginButtonPresent();
+        logger.info("Put attention on the appeared message!!! 'Check . in email' ");
 
     }
 
     @Test
-    public void registrationWrongPass() {
-        boolean res = new LoginScreen(driver).fillEmail("all@gmail.com").fillPassword("as12345")
-                .clickLoginBtnForNegativeTests();
-        Assert.assertTrue(res);
+    public void registrationWrongPassLessSymbols() {
+//        boolean res = new LoginScreen(driver).fillEmail("all@gmail.com").fillPassword("as12345")
+//                .clickLoginBtnForNegativeTests();
+//        Assert.assertTrue(res);
+        new LoginScreen(driver).fillEmail("all@gmail.com").fillPassword("as12345").clickLoginBtnLoginNeg()
+                .clickOnRedSign().loginButtonPresent();
+        logger.info("Put attention on the appeared message!!! 'Password can't be smaller then 8 symbols' ");
 
     }
 }

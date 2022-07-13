@@ -33,6 +33,7 @@ import screens.LoginScreen;
         User user = User.builder().email("Olamail.com").password("qQ12345@").build();
         new LoginScreen(driver).fillEmail(user.getEmail()).fillPassword(user.getPassword()).clickLoginBtnLoginNeg()
                 .clickOnRedSign().loginButtonPresent();
+        logger.info("Put attention on the appeared message!!! 'Check @ in email' ");
 
     }
 
