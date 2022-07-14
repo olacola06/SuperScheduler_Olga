@@ -26,9 +26,14 @@ import screens.*;
     }
     @Test(enabled = true)
     public void deleteExistEventWithDetails(){
-        new HomeScreen(driver).deleteEventDetails("Low");
+        new HomeScreen(driver).deleteEventDetails("Next year");
 
     }
+    @Test
+    public void deleteAllContacts(){
+        new HomeScreen(driver).deleteAllContacts();
+    }
+
     @AfterClass(enabled = false)
     public void postCondition(){
         new HomeScreen(driver).openMenu().logout();
