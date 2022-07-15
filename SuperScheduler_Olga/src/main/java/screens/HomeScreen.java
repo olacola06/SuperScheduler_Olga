@@ -84,7 +84,7 @@ public class HomeScreen extends BaseScreen {
                 pause(1);
                 refreshScreen();
             }
-            pause(3);
+            pause(2);
         }
         int finishAmount = events.size();
         logger.info("'Finished with Amount of events = ' " + finishAmount);

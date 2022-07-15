@@ -144,7 +144,7 @@ public class MyListener implements AppiumWebDriverEventListener {
         logger.info("We have a problem -->"+throwable.fillInStackTrace());
 
         int i = (int)System.currentTimeMillis()/1000%3600;
-        String screenshotToSave = "src/test/screenshots/screenshot"+i+".png";
+        String screenshotToSave = "src/test/resources/screenshots/screenshot"+i+".png";
         //String screenshotToSave ="C:/Users/Olga/GitHub/SuperScheduler_Olga/SuperScheduler_Olga/src/test/screenshots/screenshot"
                // +i+".png";
 

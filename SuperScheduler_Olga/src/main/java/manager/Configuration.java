@@ -16,37 +16,37 @@ import java.net.MalformedURLException;
 import java.net.URL;
 
 public class Configuration {
-
     protected static AppiumDriver<MobileElement> driver;
-
     protected Logger logger = LoggerFactory.getLogger(Configuration.class);
 
     @BeforeMethod
-    public void startLogger(Method method){
-        logger.info("Start test->>"+method.getName());
+    public void loggerStart(Method m){
+        logger.info("Method to be tested:->>"+m.getName() );
     }
     @AfterMethod
-    public void endLogger(Method m){
-        logger.info("Test  "+m.getName()+" finished");
+    public void loggerStop(Method m){
+        logger.info("Test named:->>"+m.getName()+" finished");
     }
 
     @BeforeSuite
     public void setUp() throws MalformedURLException {
         DesiredCapabilities capabilities = new DesiredCapabilities();
-        capabilities.setCapability("deviceName","Nexus5");
+        capabilities.setCapability("deviceName","R58N75HPY8E");
         capabilities.setCapability("platformName","Android");
-        capabilities.setCapability("platformVersion","8.0");
+        capabilities.setCapability("platformVersion","12");
         capabilities.setCapability("appPackage","com.example.svetlana.scheduler");
         capabilities.setCapability("appActivity",".presentation.splashScreen.SplashScreenActivity");
         capabilities.setCapability("automationName","Appium");
-        //capabilities.setCapability("app","/Users/Olga/v.0.0.3.apk");
+        //capabilities.setCapability("app","C:/Users/Olga/v.0.0.3.apk");
 
         driver = new AppiumDriver<MobileElement>(new URL("http://127.0.0.1:4723/wd/hub"),capabilities);
         driver = EventFiringWebDriverFactory.getEventFiringWebDriver(driver, new MyListener());
     }
-
     @AfterSuite(enabled = false)
     public void tearDown(){
         driver.quit();
     }
+
 }
+
+

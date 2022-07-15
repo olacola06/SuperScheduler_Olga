@@ -1,10 +1,8 @@
 package tests;
 
 import manager.Configuration;
-import manager.ConfigurationRealPhone;
 import models.Event;
 import models.User;
-import org.slf4j.Logger;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
@@ -12,8 +10,7 @@ import org.testng.annotations.Test;
 import screens.HomeScreen;
 import screens.LoginScreen;
 
-    public class CreateNewEventTests extends ConfigurationRealPhone {
-    //public class CreateNewEventTests extends Configuration {
+   public class CreateNewEventTests extends Configuration {
 
     @BeforeClass
     public void preConditions(){
@@ -23,7 +20,7 @@ import screens.LoginScreen;
 
     @Test(invocationCount = 2)
     public void addNewEventSuccess(){
-        Event event = Event.builder().title("Reality").type("Full-day").breaks(3)
+        Event event = Event.builder().title("Real One").type("Full-day").breaks(3)
                 .wage(50).build();
         logger.info("New Event with details:->> Title 'Reality', Type 'Full-day', Wage= '50'");
         new HomeScreen(driver).initEventCreate().createNewEvent(event).isPlusBtnPresentAssert();
@@ -32,7 +29,7 @@ import screens.LoginScreen;
     }
     @Test(invocationCount = 2)
     public void addNewEventSuccessSecond(){
-        Event event = Event.builder().title("Next year").type("Half-day").breaks(2)
+        Event event = Event.builder().title("Next day").type("Half-day").breaks(2)
                 .wage(30).build();
         logger.info("New Event with details:->> Title 'Next year', Type 'Half-day', Wage= '30'");
         boolean isPlusBtnPresent = new HomeScreen(driver).initEventCreate().createNewEvent(event)
@@ -50,7 +47,7 @@ import screens.LoginScreen;
         logger.info("Event was added Successfully");
     }
 
-    @AfterClass
+    @AfterClass(enabled = false)
     public void postCondition(){
         new HomeScreen(driver).openMenu().logout();
     }

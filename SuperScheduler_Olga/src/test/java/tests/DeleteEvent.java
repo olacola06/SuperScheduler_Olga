@@ -1,7 +1,6 @@
 package tests;
 
 import manager.Configuration;
-import manager.ConfigurationRealPhone;
 import models.User;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
@@ -9,13 +8,13 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import screens.*;
 
-//public class DeleteEvent extends Configuration {
-    public class DeleteEvent extends ConfigurationRealPhone {
+      public class DeleteEvent extends Configuration {
 
     @BeforeClass
     public void preCondition(){
-        new LoginScreen(driver).complexLogin(User.builder()
-                .email("olla@gmail.com").password("Cd12345$").build());
+        //User user = User.builder().email("olla@gmail.com").password("Cd12345$").build();
+        //new LoginScreen(driver).complexLogin(user);
+        new LoginScreen(driver).complexLogin(User.builder().email("olla@gmail.com").password("Cd12345$").build());
     }
 
     @Test
@@ -26,7 +25,7 @@ import screens.*;
     }
     @Test(enabled = true)
     public void deleteExistEventWithDetails(){
-        new HomeScreen(driver).deleteEventDetails("Next year");
+        new HomeScreen(driver).deleteEventDetails("Next day");
 
     }
     @Test

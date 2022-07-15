@@ -1,19 +1,11 @@
 package tests;
 
-import io.appium.java_client.MobileElement;
-import manager.ConfigurationRealPhone;
+import manager.Configuration;
 import models.User;
-import org.openqa.selenium.Alert;
-import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.Assert;
 import org.testng.annotations.Test;
 import screens.LoginScreen;
 
-public class RegistrationTests extends ConfigurationRealPhone {
-    //public class RegistSuccess extends Configuration {
-
+    public class RegistrationTests extends Configuration {
     int i = (int) (System.currentTimeMillis()) / 1000 % 3600;
 
     @Test
