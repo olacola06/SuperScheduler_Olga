@@ -25,7 +25,7 @@ import screens.*;
     }
     @Test(enabled = true)
     public void deleteExistEventWithDetails(){
-        new HomeScreen(driver).deleteEventDetails("Next day");
+        new HomeScreen(driver).deleteEventDetails("Low");
 
     }
     @Test

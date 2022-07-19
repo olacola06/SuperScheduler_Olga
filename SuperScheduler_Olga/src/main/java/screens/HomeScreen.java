@@ -83,8 +83,8 @@ public class HomeScreen extends BaseScreen {
                 deleteIcon.click();
                 pause(1);
                 refreshScreen();
-            }
-            pause(2);
+        }
+           pause(5);
         }
         int finishAmount = events.size();
         logger.info("'Finished with Amount of events = ' " + finishAmount);
@@ -107,16 +107,6 @@ public class HomeScreen extends BaseScreen {
         return new HomeScreen(driver);
     }
 
-    private void refreshScreen() {
-        Dimension screenSizes = driver.manage().window().getSize();
-        int x = screenSizes.getWidth() / 2;
-        int yFrom = (int) (screenSizes.getHeight() * 0.2);
-        int yTo = (int) (screenSizes.getHeight() * 0.8);
-        TouchAction<?> action = new TouchAction<>(driver);
-        action.longPress(PointOption.point(x, yFrom)).moveTo(PointOption.point(x, yTo))
-                .release().perform();
-
-    }
 
     public boolean checkIfEventDeleted(int startAmount, int finishAmount) {
         if (startAmount - finishAmount == 1) {

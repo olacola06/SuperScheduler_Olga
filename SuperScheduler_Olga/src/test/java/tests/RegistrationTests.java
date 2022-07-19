@@ -51,4 +51,14 @@ import screens.LoginScreen;
         logger.info("Put attention on the appeared message!!! 'Password can't be smaller then 8 symbols' ");
 
     }
+        @Test
+        public void registrationNotSkip(){
+            String currencyCountry = "British pound";
+            String wageRate = "1200";
+            User user = User.builder().email("Dudy"+i+"@gmail.com").password("Oo12345@").build();
+
+            new LoginScreen(driver).complexRegist(user).setDetails(currencyCountry,wageRate)
+                    .isPlusBtnPresentAssert();
+
+        }
 }
