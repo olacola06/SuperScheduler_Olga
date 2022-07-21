@@ -2,7 +2,11 @@ package tests;
 
 import manager.Configuration;
 import models.User;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.Test;
+import screens.HomeScreen;
 import screens.LoginScreen;
 
     public class RegistrationTests extends Configuration {
@@ -58,7 +62,8 @@ import screens.LoginScreen;
             User user = User.builder().email("Dudy"+i+"@gmail.com").password("Oo12345@").build();
 
             new LoginScreen(driver).complexRegist(user).setDetails(currencyCountry,wageRate)
-                    .isPlusBtnPresentAssert();
+                    .isPlusBtnPresentAssert().openMenu().logout();
 
         }
+
 }

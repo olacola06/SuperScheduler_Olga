@@ -77,19 +77,35 @@ public class HomeScreen extends BaseScreen {
         new WebDriverWait(driver, 10).until(ExpectedConditions.visibilityOf(plusButton));
         int startAmount = events.size();
         logger.info("'Started with Amount of events = ' " + startAmount);
-        for (MobileElement el : titleTextList) {
-            if (el.getText().equals(details)) {
-                el.click();
-                deleteIcon.click();
-                pause(1);
-                refreshScreen();
+        //boolean flag = false;
+        int i =0;
+        do {
+            for (MobileElement el : titleTextList) {
+                if (el.getText().equals(details)) {
+                    el.click();
+                    deleteIcon.click();
+                    refreshScreen();
+//                    flag = true;
+//                    break;
+                }
+                i++;
+                pause(5);
+            }
         }
-           pause(5);
-        }
-        int finishAmount = events.size();
-        logger.info("'Finished with Amount of events = ' " + finishAmount);
-        Assert.assertTrue(checkIfEventDeleted(startAmount, finishAmount));
-        return new HomeScreen(driver);
+       while (i<startAmount);
+//        for (MobileElement el : titleTextList) {
+//            if (el.getText().equals(details)) {
+//                el.click();
+//                deleteIcon.click();
+//                refreshScreen();
+//                pause(5);
+//        }
+//           //pause(5);
+
+                int finishAmount = events.size();
+                logger.info("'Finished with Amount of events = ' " + finishAmount);
+                Assert.assertTrue(checkIfEventDeleted(startAmount, finishAmount));
+                return new HomeScreen(driver);
     }
     public HomeScreen deleteAllContacts(){
         int startAmountContacts = events.size();
@@ -125,6 +141,4 @@ public class HomeScreen extends BaseScreen {
         new WebDriverWait(driver, 10).until(ExpectedConditions.visibilityOf(plusButton));
         return (plusButton.isDisplayed());
     }
-
-
 }
