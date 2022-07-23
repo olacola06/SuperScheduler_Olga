@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="tests.AddDirections" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-07-23T18:10:26" hostname="ARTEMKA" time="2.804">
+  <properties/>
+  <testcase name="addNewDirection" classname="tests.AddDirections" time="2.804"/>
+  <system-out><![CDATA[21:10:13  INFO  manager.MyListener - start search element by locator:->>By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/log_email_input']
+21:10:13  INFO  manager.MyListener - There is a problem->>An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '4.0.0-alpha-1', revision: 'd1d3728cae', time: '2019-04-24T13:42:21'
+System info: host: 'ARTEMKA', ip: '192.168.0.103', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_333'
+Driver info: io.appium.java_client.AppiumDriver
+Capabilities {appActivity: .presentation.splashScreen...., appPackage: com.example.svetlana.scheduler, automationName: UiAutomator2, databaseEnabled: false, desired: {appActivity: .presentation.splashScreen...., appPackage: com.example.svetlana.scheduler, automationName: UiAutomator2, deviceName: R58N75HPY8E, platformName: android, platformVersion: 12}, deviceApiLevel: 31, deviceManufacturer: samsung, deviceModel: SM-N985F, deviceName: R58N75HPY8E, deviceScreenDensity: 420, deviceScreenSize: 1080x2316, deviceUDID: R58N75HPY8E, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 2.625, platform: LINUX, platformName: Android, platformVersion: 12, statBarHeight: 67, takesScreenshot: true, viewportRect: {height: 2056, left: 0, top: 67, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: 4a40e944-be49-4705-9c3a-1f1480a739aa
+*** Element info: {Using=xpath, value=//*[@resource-id='com.example.svetlana.scheduler:id/log_email_input']}
+21:10:13  INFO  manager.MyListener - We have a problem -->org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '4.0.0-alpha-1', revision: 'd1d3728cae', time: '2019-04-24T13:42:21'
+System info: host: 'ARTEMKA', ip: '192.168.0.103', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_333'
+Driver info: io.appium.java_client.AppiumDriver
+Capabilities {appActivity: .presentation.splashScreen...., appPackage: com.example.svetlana.scheduler, automationName: UiAutomator2, databaseEnabled: false, desired: {appActivity: .presentation.splashScreen...., appPackage: com.example.svetlana.scheduler, automationName: UiAutomator2, deviceName: R58N75HPY8E, platformName: android, platformVersion: 12}, deviceApiLevel: 31, deviceManufacturer: samsung, deviceModel: SM-N985F, deviceName: R58N75HPY8E, deviceScreenDensity: 420, deviceScreenSize: 1080x2316, deviceUDID: R58N75HPY8E, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 2.625, platform: LINUX, platformName: Android, platformVersion: 12, statBarHeight: 67, takesScreenshot: true, viewportRect: {height: 2056, left: 0, top: 67, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: 4a40e944-be49-4705-9c3a-1f1480a739aa
+*** Element info: {Using=xpath, value=//*[@resource-id='com.example.svetlana.scheduler:id/log_email_input']}
+21:10:14  INFO  manager.MyListener - element with locator->>By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/log_email_input'] was found
+21:10:14  INFO  manager.MyListener - start search element by locator:->>By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/log_email_input']
+21:10:14  INFO  manager.MyListener - There is a problem->>An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '4.0.0-alpha-1', revision: 'd1d3728cae', time: '2019-04-24T13:42:21'
+System info: host: 'ARTEMKA', ip: '192.168.0.103', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_333'
+Driver info: io.appium.java_client.AppiumDriver
+Capabilities {appActivity: .presentation.splashScreen...., appPackage: com.example.svetlana.scheduler, automationName: UiAutomator2, databaseEnabled: false, desired: {appActivity: .presentation.splashScreen...., appPackage: com.example.svetlana.scheduler, automationName: UiAutomator2, deviceName: R58N75HPY8E, platformName: android, platformVersion: 12}, deviceApiLevel: 31, deviceManufacturer: samsung, deviceModel: SM-N985F, deviceName: R58N75HPY8E, deviceScreenDensity: 420, deviceScreenSize: 1080x2316, deviceUDID: R58N75HPY8E, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 2.625, platform: LINUX, platformName: Android, platformVersion: 12, statBarHeight: 67, takesScreenshot: true, viewportRect: {height: 2056, left: 0, top: 67, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: 4a40e944-be49-4705-9c3a-1f1480a739aa
+*** Element info: {Using=xpath, value=//*[@resource-id='com.example.svetlana.scheduler:id/log_email_input']}
+21:10:14  INFO  manager.MyListener - We have a problem -->org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '4.0.0-alpha-1', revision: 'd1d3728cae', time: '2019-04-24T13:42:21'
+System info: host: 'ARTEMKA', ip: '192.168.0.103', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_333'
+Driver info: io.appium.java_client.AppiumDriver
+Capabilities {appActivity: .presentation.splashScreen...., appPackage: com.example.svetlana.scheduler, automationName: UiAutomator2, databaseEnabled: false, desired: {appActivity: .presentation.splashScreen...., appPackage: com.example.svetlana.scheduler, automationName: UiAutomator2, deviceName: R58N75HPY8E, platformName: android, platformVersion: 12}, deviceApiLevel: 31, deviceManufacturer: samsung, deviceModel: SM-N985F, deviceName: R58N75HPY8E, deviceScreenDensity: 420, deviceScreenSize: 1080x2316, deviceUDID: R58N75HPY8E, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 2.625, platform: LINUX, platformName: Android, platformVersion: 12, statBarHeight: 67, takesScreenshot: true, viewportRect: {height: 2056, left: 0, top: 67, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: 4a40e944-be49-4705-9c3a-1f1480a739aa
+*** Element info: {Using=xpath, value=//*[@resource-id='com.example.svetlana.scheduler:id/log_email_input']}
+21:10:15  INFO  manager.MyListener - element with locator->>By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/log_email_input'] was found
+21:10:15  INFO  manager.MyListener - start search element by locator:->>By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/log_email_input']
+21:10:15  INFO  manager.MyListener - There is a problem->>An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '4.0.0-alpha-1', revision: 'd1d3728cae', time: '2019-04-24T13:42:21'
+System info: host: 'ARTEMKA', ip: '192.168.0.103', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_333'
+Driver info: io.appium.java_client.AppiumDriver
+Capabilities {appActivity: .presentation.splashScreen...., appPackage: com.example.svetlana.scheduler, automationName: UiAutomator2, databaseEnabled: false, desired: {appActivity: .presentation.splashScreen...., appPackage: com.example.svetlana.scheduler, automationName: UiAutomator2, deviceName: R58N75HPY8E, platformName: android, platformVersion: 12}, deviceApiLevel: 31, deviceManufacturer: samsung, deviceModel: SM-N985F, deviceName: R58N75HPY8E, deviceScreenDensity: 420, deviceScreenSize: 1080x2316, deviceUDID: R58N75HPY8E, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 2.625, platform: LINUX, platformName: Android, platformVersion: 12, statBarHeight: 67, takesScreenshot: true, viewportRect: {height: 2056, left: 0, top: 67, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: 4a40e944-be49-4705-9c3a-1f1480a739aa
+*** Element info: {Using=xpath, value=//*[@resource-id='com.example.svetlana.scheduler:id/log_email_input']}
+21:10:15  INFO  manager.MyListener - We have a problem -->org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '4.0.0-alpha-1', revision: 'd1d3728cae', time: '2019-04-24T13:42:21'
+System info: host: 'ARTEMKA', ip: '192.168.0.103', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_333'
+Driver info: io.appium.java_client.AppiumDriver
+Capabilities {appActivity: .presentation.splashScreen...., appPackage: com.example.svetlana.scheduler, automationName: UiAutomator2, databaseEnabled: false, desired: {appActivity: .presentation.splashScreen...., appPackage: com.example.svetlana.scheduler, automationName: UiAutomator2, deviceName: R58N75HPY8E, platformName: android, platformVersion: 12}, deviceApiLevel: 31, deviceManufacturer: samsung, deviceModel: SM-N985F, deviceName: R58N75HPY8E, deviceScreenDensity: 420, deviceScreenSize: 1080x2316, deviceUDID: R58N75HPY8E, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 2.625, platform: LINUX, platformName: Android, platformVersion: 12, statBarHeight: 67, takesScreenshot: true, viewportRect: {height: 2056, left: 0, top: 67, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: 4a40e944-be49-4705-9c3a-1f1480a739aa
+*** Element info: {Using=xpath, value=//*[@resource-id='com.example.svetlana.scheduler:id/log_email_input']}
+21:10:16  INFO  manager.MyListener - element with locator->>By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/log_email_input'] was found
+21:10:16  INFO  manager.MyListener - start search element by locator:->>By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/log_email_input']
+21:10:16  INFO  manager.MyListener - There is a problem->>An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '4.0.0-alpha-1', revision: 'd1d3728cae', time: '2019-04-24T13:42:21'
+System info: host: 'ARTEMKA', ip: '192.168.0.103', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_333'
+Driver info: io.appium.java_client.AppiumDriver
+Capabilities {appActivity: .presentation.splashScreen...., appPackage: com.example.svetlana.scheduler, automationName: UiAutomator2, databaseEnabled: false, desired: {appActivity: .presentation.splashScreen...., appPackage: com.example.svetlana.scheduler, automationName: UiAutomator2, deviceName: R58N75HPY8E, platformName: android, platformVersion: 12}, deviceApiLevel: 31, deviceManufacturer: samsung, deviceModel: SM-N985F, deviceName: R58N75HPY8E, deviceScreenDensity: 420, deviceScreenSize: 1080x2316, deviceUDID: R58N75HPY8E, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 2.625, platform: LINUX, platformName: Android, platformVersion: 12, statBarHeight: 67, takesScreenshot: true, viewportRect: {height: 2056, left: 0, top: 67, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: 4a40e944-be49-4705-9c3a-1f1480a739aa
+*** Element info: {Using=xpath, value=//*[@resource-id='com.example.svetlana.scheduler:id/log_email_input']}
+21:10:16  INFO  manager.MyListener - We have a problem -->org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '4.0.0-alpha-1', revision: 'd1d3728cae', time: '2019-04-24T13:42:21'
+System info: host: 'ARTEMKA', ip: '192.168.0.103', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_333'
+Driver info: io.appium.java_client.AppiumDriver
+Capabilities {appActivity: .presentation.splashScreen...., appPackage: com.example.svetlana.scheduler, automationName: UiAutomator2, databaseEnabled: false, desired: {appActivity: .presentation.splashScreen...., appPackage: com.example.svetlana.scheduler, automationName: UiAutomator2, deviceName: R58N75HPY8E, platformName: android, platformVersion: 12}, deviceApiLevel: 31, deviceManufacturer: samsung, deviceModel: SM-N985F, deviceName: R58N75HPY8E, deviceScreenDensity: 420, deviceScreenSize: 1080x2316, deviceUDID: R58N75HPY8E, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 2.625, platform: LINUX, platformName: Android, platformVersion: 12, statBarHeight: 67, takesScreenshot: true, viewportRect: {height: 2056, left: 0, top: 67, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: 4a40e944-be49-4705-9c3a-1f1480a739aa
+*** Element info: {Using=xpath, value=//*[@resource-id='com.example.svetlana.scheduler:id/log_email_input']}
+21:10:17  INFO  manager.MyListener - element with locator->>By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/log_email_input'] was found
+21:10:17  INFO  manager.MyListener - start search element by locator:->>By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/log_email_input']
+21:10:18  INFO  manager.MyListener - element with locator->>By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/log_email_input'] was found
+21:10:18  INFO  manager.MyListener - start search element by locator:->>By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/log_email_input']
+21:10:18  INFO  manager.MyListener - element with locator->>By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/log_email_input'] was found
+21:10:18  INFO  manager.MyListener - start search element by locator:->>By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/log_email_input']
+21:10:19  INFO  manager.MyListener - element with locator->>By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/log_email_input'] was found
+21:10:19  INFO  manager.MyListener - start search element by locator:->>By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/log_email_input']
+21:10:20  INFO  manager.MyListener - element with locator->>By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/log_email_input'] was found
+21:10:20  INFO  manager.MyListener - start search element by locator:->>By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/log_password_input']
+21:10:21  INFO  manager.MyListener - element with locator->>By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/log_password_input'] was found
+21:10:21  INFO  manager.MyListener - start search element by locator:->>By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/log_password_input']
+21:10:22  INFO  manager.MyListener - element with locator->>By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/log_password_input'] was found
+21:10:22  INFO  manager.MyListener - start search element by locator:->>By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/log_password_input']
+21:10:23  INFO  manager.MyListener - element with locator->>By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/log_password_input'] was found
+21:10:24  INFO  manager.MyListener - start search element by locator:->>By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/login_btn']
+21:10:24  INFO  manager.MyListener - element with locator->>By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/login_btn'] was found
+21:10:26  INFO  manager.Configuration - Method to be tested:->>addNewDirection
+21:10:27  INFO  manager.MyListener - start search element by locator:->>By.xpath: //*[@content-desc='Open']
+21:10:27  INFO  manager.MyListener - element with locator->>By.xpath: //*[@content-desc='Open'] was found
+21:10:27  INFO  manager.MyListener - start search element by locator:->>By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/nav_fr_directions_container']
+21:10:29  INFO  manager.MyListener - element with locator->>By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/nav_fr_directions_container'] was found
+21:10:29  INFO  manager.Configuration - Test named:->>addNewDirection finished
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

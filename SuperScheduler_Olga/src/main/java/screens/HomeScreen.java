@@ -43,6 +43,9 @@ public class HomeScreen extends BaseScreen {
 
     @FindBy(xpath = "//*[@resource-id='com.example.svetlana.scheduler:id/delete_menu']")
     MobileElement deleteIcon;
+    @FindBy(xpath = "//*[@resource-id='com.example.svetlana.scheduler:id/nav_fr_directions_container']")
+    MobileElement directions;
+
 
     public HomeScreen openMenu() {
         burgerMenu.click();
@@ -127,5 +130,10 @@ public class HomeScreen extends BaseScreen {
     public boolean isPlusBtnPresent() {
         new WebDriverWait(driver, 10).until(ExpectedConditions.visibilityOf(plusButton));
         return (plusButton.isDisplayed());
+    }
+
+    public Directions clickDirection() {
+        directions.click();
+        return new Directions(driver);
     }
 }
