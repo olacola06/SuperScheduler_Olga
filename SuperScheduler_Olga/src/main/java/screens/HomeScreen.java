@@ -77,40 +77,27 @@ public class HomeScreen extends BaseScreen {
         new WebDriverWait(driver, 10).until(ExpectedConditions.visibilityOf(plusButton));
         int startAmount = events.size();
         logger.info("'Started with Amount of events = ' " + startAmount);
-        //boolean flag = false;
-        int i =0;
-        do {
             for (MobileElement el : titleTextList) {
                 if (el.getText().equals(details)) {
                     el.click();
                     deleteIcon.click();
+                    new WebDriverWait(driver,10).until(ExpectedConditions.visibilityOf(plusButton));
                     refreshScreen();
-//                    flag = true;
-//                    break;
+                    pause(3);
                 }
-                i++;
-                pause(5);
+                refreshScreen();
             }
-        }
-       while (i<startAmount);
-//        for (MobileElement el : titleTextList) {
-//            if (el.getText().equals(details)) {
-//                el.click();
-//                deleteIcon.click();
-//                refreshScreen();
-//                pause(5);
-//        }
-//           //pause(5);
 
-                int finishAmount = events.size();
-                logger.info("'Finished with Amount of events = ' " + finishAmount);
-                Assert.assertTrue(checkIfEventDeleted(startAmount, finishAmount));
-                return new HomeScreen(driver);
+        int finishAmount = events.size();
+        logger.info("'Finished with Amount of events = ' " + finishAmount);
+        Assert.assertTrue(checkIfEventDeleted(startAmount, finishAmount));
+        return new HomeScreen(driver);
     }
-    public HomeScreen deleteAllContacts(){
+
+    public HomeScreen deleteAllContacts() {
         int startAmountContacts = events.size();
-        logger.info("Total contacts to be deleted =  "+events.size());
-        for(int i=0;i<startAmountContacts;i++){
+        logger.info("Total contacts to be deleted =  " + events.size());
+        for (int i = 0; i < startAmountContacts; i++) {
             eventTextBox.click();
             deleteIcon.click();
             pause(1);

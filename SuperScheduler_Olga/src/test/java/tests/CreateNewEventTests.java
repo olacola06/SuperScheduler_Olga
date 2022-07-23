@@ -38,7 +38,7 @@ import screens.LoginScreen;
         logger.info("Event was added Successfully");
 
     }
-    @Test
+    @Test(invocationCount = 2)
     public void addNewEventSuccessDate(){
         logger.info("New Event with details:->> 'Low', Type 'Half-day', Wage= '30'");
         new HomeScreen(driver).initEventCreate().createNewEventDate(Event.builder().
