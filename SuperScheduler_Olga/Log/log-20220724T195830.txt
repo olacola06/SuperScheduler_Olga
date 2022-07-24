@@ -1,8 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="tests.AddDirections" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-07-24T16:58:56" hostname="ARTEMKA" time="34.915">
-  <properties/>
-  <testcase name="addNewDirection" classname="tests.AddDirections" time="34.915"/>
-  <system-out><![CDATA[19:58:43  INFO  manager.MyListener - start search element by locator:->>By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/log_email_input']
+19:58:43  INFO  manager.MyListener - start search element by locator:->>By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/log_email_input']
 19:58:43  INFO  manager.MyListener - There is a problem->>An element could not be located on the page using the given search parameters.
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '4.0.0-alpha-1', revision: 'd1d3728cae', time: '2019-04-24T13:42:21'
@@ -134,6 +130,3 @@ Session ID: b5d5907c-d5a0-4ca5-95ab-bc33be1f1470
 19:59:30  INFO  manager.MyListener - start search element by locator:->>By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/directions_list_fab']
 19:59:30  INFO  manager.MyListener - element with locator->>By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/directions_list_fab'] was found
 19:59:31  INFO  manager.Configuration - Test named:->>addNewDirection finished
-]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>

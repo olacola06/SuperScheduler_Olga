@@ -62,7 +62,6 @@ public class WizardScreen extends BaseScreen {
         type(setWage, wageRate);
         wageOkBtn.click();
     }
-
     public void chooseCurrency(String countryOfCurrency) {
         currencyArrow.click();
         if (countryOfCurrency != null) {
@@ -84,5 +83,6 @@ public class WizardScreen extends BaseScreen {
 
     }
 }
+
 
 

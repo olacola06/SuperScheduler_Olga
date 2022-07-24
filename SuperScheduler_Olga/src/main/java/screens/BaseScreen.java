@@ -30,6 +30,12 @@ public class BaseScreen {
             el.sendKeys(email);
         }
     }
+    public void typeInt(MobileElement el, String number) {
+            el.click();
+            el.clear();
+            el.sendKeys(number);
+
+    }
 
     public void pause(int seconds) {
         try {

@@ -16,7 +16,7 @@ public class AddDirections extends Configuration {
     }
     @Test
     public void addNewDirection(){
-        new HomeScreen(driver).openMenu().clickDirection();
-
+        new HomeScreen(driver).openMenu().clickDirection()
+                .addDirection("Tel Aviv","Haifa","90","50","British pound");
     }
 }
