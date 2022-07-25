@@ -23,7 +23,7 @@
 <tr>
 <td>
 <div class="infoBox" id="tests">
-<div class="counter">1</div>
+<div class="counter">5</div>
 <p>tests</p>
 </div>
 </td>
@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">34.915s</div>
+<div class="counter">3m44.26s</div>
 <p>duration</p>
 </div>
 </td>
@@ -78,8 +78,28 @@
 </tr>
 </thead>
 <tr>
-<td class="success">addNewDirection</td>
-<td class="success">34.915s</td>
+<td class="success">addNewDirectionData[0](Direction(from=Moscow, to=Kaluga, numberKm=250, cost=150, currency=Russian ruble))</td>
+<td class="success">59.613s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">addNewDirectionData[1](Direction(from=Berlin, to=Munich, numberKm=500, cost=20, currency=European euro))</td>
+<td class="success">38.846s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">addNewDirectionData[2](Direction(from=London, to=Manchester, numberKm=300, cost=15, currency=British pound))</td>
+<td class="success">33.736s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">addNewDirectionData[3](Direction(from=Tel Aviv, to=Bat Yam, numberKm=25, cost=55, currency=New Israeli Shekel))</td>
+<td class="success">52.365s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">addNewDirectionData[4](Direction(from=Paphos, to=Larnaka, numberKm=240, cost=30, currency=European euro))</td>
+<td class="success">39.696s</td>
 <td class="success">passed</td>
 </tr>
 </table>
@@ -87,138 +107,346 @@
 <div id="tab1" class="tab">
 <h2>Standard output</h2>
 <span class="code">
-<pre>19:58:43  INFO  manager.MyListener - start search element by locator:-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/log_email_input']
-19:58:43  INFO  manager.MyListener - There is a problem-&gt;&gt;An element could not be located on the page using the given search parameters.
+<pre>08:59:23  INFO  manager.MyListener - start search element by locator:-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/log_email_input']
+08:59:23  INFO  manager.MyListener - There is a problem-&gt;&gt;An element could not be located on the page using the given search parameters.
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '4.0.0-alpha-1', revision: 'd1d3728cae', time: '2019-04-24T13:42:21'
 System info: host: 'ARTEMKA', ip: '192.168.0.103', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_333'
 Driver info: io.appium.java_client.AppiumDriver
 Capabilities {appActivity: .presentation.splashScreen...., appPackage: com.example.svetlana.scheduler, automationName: UiAutomator2, databaseEnabled: false, desired: {appActivity: .presentation.splashScreen...., appPackage: com.example.svetlana.scheduler, automationName: UiAutomator2, deviceName: R58N75HPY8E, platformName: android, platformVersion: 12}, deviceApiLevel: 31, deviceManufacturer: samsung, deviceModel: SM-N985F, deviceName: R58N75HPY8E, deviceScreenDensity: 420, deviceScreenSize: 1080x2316, deviceUDID: R58N75HPY8E, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 2.625, platform: LINUX, platformName: Android, platformVersion: 12, statBarHeight: 67, takesScreenshot: true, viewportRect: {height: 2056, left: 0, top: 67, width: 1080}, warnings: {}, webStorageEnabled: false}
-Session ID: b5d5907c-d5a0-4ca5-95ab-bc33be1f1470
+Session ID: 3e9aef1a-a372-429d-87a1-903c80d307bf
 *** Element info: {Using=xpath, value=//*[@resource-id='com.example.svetlana.scheduler:id/log_email_input']}
-19:58:43  INFO  manager.MyListener - We have a problem --&gt;org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+08:59:23  INFO  manager.MyListener - We have a problem --&gt;org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '4.0.0-alpha-1', revision: 'd1d3728cae', time: '2019-04-24T13:42:21'
 System info: host: 'ARTEMKA', ip: '192.168.0.103', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_333'
 Driver info: io.appium.java_client.AppiumDriver
 Capabilities {appActivity: .presentation.splashScreen...., appPackage: com.example.svetlana.scheduler, automationName: UiAutomator2, databaseEnabled: false, desired: {appActivity: .presentation.splashScreen...., appPackage: com.example.svetlana.scheduler, automationName: UiAutomator2, deviceName: R58N75HPY8E, platformName: android, platformVersion: 12}, deviceApiLevel: 31, deviceManufacturer: samsung, deviceModel: SM-N985F, deviceName: R58N75HPY8E, deviceScreenDensity: 420, deviceScreenSize: 1080x2316, deviceUDID: R58N75HPY8E, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 2.625, platform: LINUX, platformName: Android, platformVersion: 12, statBarHeight: 67, takesScreenshot: true, viewportRect: {height: 2056, left: 0, top: 67, width: 1080}, warnings: {}, webStorageEnabled: false}
-Session ID: b5d5907c-d5a0-4ca5-95ab-bc33be1f1470
+Session ID: 3e9aef1a-a372-429d-87a1-903c80d307bf
 *** Element info: {Using=xpath, value=//*[@resource-id='com.example.svetlana.scheduler:id/log_email_input']}
-19:58:43  INFO  manager.MyListener - element with locator-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/log_email_input'] was found
-19:58:44  INFO  manager.MyListener - start search element by locator:-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/log_email_input']
-19:58:44  INFO  manager.MyListener - There is a problem-&gt;&gt;An element could not be located on the page using the given search parameters.
+08:59:23  INFO  manager.MyListener - element with locator-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/log_email_input'] was found
+08:59:24  INFO  manager.MyListener - start search element by locator:-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/log_email_input']
+08:59:24  INFO  manager.MyListener - There is a problem-&gt;&gt;An element could not be located on the page using the given search parameters.
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '4.0.0-alpha-1', revision: 'd1d3728cae', time: '2019-04-24T13:42:21'
 System info: host: 'ARTEMKA', ip: '192.168.0.103', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_333'
 Driver info: io.appium.java_client.AppiumDriver
 Capabilities {appActivity: .presentation.splashScreen...., appPackage: com.example.svetlana.scheduler, automationName: UiAutomator2, databaseEnabled: false, desired: {appActivity: .presentation.splashScreen...., appPackage: com.example.svetlana.scheduler, automationName: UiAutomator2, deviceName: R58N75HPY8E, platformName: android, platformVersion: 12}, deviceApiLevel: 31, deviceManufacturer: samsung, deviceModel: SM-N985F, deviceName: R58N75HPY8E, deviceScreenDensity: 420, deviceScreenSize: 1080x2316, deviceUDID: R58N75HPY8E, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 2.625, platform: LINUX, platformName: Android, platformVersion: 12, statBarHeight: 67, takesScreenshot: true, viewportRect: {height: 2056, left: 0, top: 67, width: 1080}, warnings: {}, webStorageEnabled: false}
-Session ID: b5d5907c-d5a0-4ca5-95ab-bc33be1f1470
+Session ID: 3e9aef1a-a372-429d-87a1-903c80d307bf
 *** Element info: {Using=xpath, value=//*[@resource-id='com.example.svetlana.scheduler:id/log_email_input']}
-19:58:44  INFO  manager.MyListener - We have a problem --&gt;org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+08:59:24  INFO  manager.MyListener - We have a problem --&gt;org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '4.0.0-alpha-1', revision: 'd1d3728cae', time: '2019-04-24T13:42:21'
 System info: host: 'ARTEMKA', ip: '192.168.0.103', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_333'
 Driver info: io.appium.java_client.AppiumDriver
 Capabilities {appActivity: .presentation.splashScreen...., appPackage: com.example.svetlana.scheduler, automationName: UiAutomator2, databaseEnabled: false, desired: {appActivity: .presentation.splashScreen...., appPackage: com.example.svetlana.scheduler, automationName: UiAutomator2, deviceName: R58N75HPY8E, platformName: android, platformVersion: 12}, deviceApiLevel: 31, deviceManufacturer: samsung, deviceModel: SM-N985F, deviceName: R58N75HPY8E, deviceScreenDensity: 420, deviceScreenSize: 1080x2316, deviceUDID: R58N75HPY8E, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 2.625, platform: LINUX, platformName: Android, platformVersion: 12, statBarHeight: 67, takesScreenshot: true, viewportRect: {height: 2056, left: 0, top: 67, width: 1080}, warnings: {}, webStorageEnabled: false}
-Session ID: b5d5907c-d5a0-4ca5-95ab-bc33be1f1470
+Session ID: 3e9aef1a-a372-429d-87a1-903c80d307bf
 *** Element info: {Using=xpath, value=//*[@resource-id='com.example.svetlana.scheduler:id/log_email_input']}
-19:58:44  INFO  manager.MyListener - element with locator-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/log_email_input'] was found
-19:58:45  INFO  manager.MyListener - start search element by locator:-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/log_email_input']
-19:58:45  INFO  manager.MyListener - There is a problem-&gt;&gt;An element could not be located on the page using the given search parameters.
+08:59:24  INFO  manager.MyListener - element with locator-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/log_email_input'] was found
+08:59:25  INFO  manager.MyListener - start search element by locator:-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/log_email_input']
+08:59:25  INFO  manager.MyListener - There is a problem-&gt;&gt;An element could not be located on the page using the given search parameters.
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '4.0.0-alpha-1', revision: 'd1d3728cae', time: '2019-04-24T13:42:21'
 System info: host: 'ARTEMKA', ip: '192.168.0.103', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_333'
 Driver info: io.appium.java_client.AppiumDriver
 Capabilities {appActivity: .presentation.splashScreen...., appPackage: com.example.svetlana.scheduler, automationName: UiAutomator2, databaseEnabled: false, desired: {appActivity: .presentation.splashScreen...., appPackage: com.example.svetlana.scheduler, automationName: UiAutomator2, deviceName: R58N75HPY8E, platformName: android, platformVersion: 12}, deviceApiLevel: 31, deviceManufacturer: samsung, deviceModel: SM-N985F, deviceName: R58N75HPY8E, deviceScreenDensity: 420, deviceScreenSize: 1080x2316, deviceUDID: R58N75HPY8E, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 2.625, platform: LINUX, platformName: Android, platformVersion: 12, statBarHeight: 67, takesScreenshot: true, viewportRect: {height: 2056, left: 0, top: 67, width: 1080}, warnings: {}, webStorageEnabled: false}
-Session ID: b5d5907c-d5a0-4ca5-95ab-bc33be1f1470
+Session ID: 3e9aef1a-a372-429d-87a1-903c80d307bf
 *** Element info: {Using=xpath, value=//*[@resource-id='com.example.svetlana.scheduler:id/log_email_input']}
-19:58:45  INFO  manager.MyListener - We have a problem --&gt;org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+08:59:25  INFO  manager.MyListener - We have a problem --&gt;org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '4.0.0-alpha-1', revision: 'd1d3728cae', time: '2019-04-24T13:42:21'
 System info: host: 'ARTEMKA', ip: '192.168.0.103', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_333'
 Driver info: io.appium.java_client.AppiumDriver
 Capabilities {appActivity: .presentation.splashScreen...., appPackage: com.example.svetlana.scheduler, automationName: UiAutomator2, databaseEnabled: false, desired: {appActivity: .presentation.splashScreen...., appPackage: com.example.svetlana.scheduler, automationName: UiAutomator2, deviceName: R58N75HPY8E, platformName: android, platformVersion: 12}, deviceApiLevel: 31, deviceManufacturer: samsung, deviceModel: SM-N985F, deviceName: R58N75HPY8E, deviceScreenDensity: 420, deviceScreenSize: 1080x2316, deviceUDID: R58N75HPY8E, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 2.625, platform: LINUX, platformName: Android, platformVersion: 12, statBarHeight: 67, takesScreenshot: true, viewportRect: {height: 2056, left: 0, top: 67, width: 1080}, warnings: {}, webStorageEnabled: false}
-Session ID: b5d5907c-d5a0-4ca5-95ab-bc33be1f1470
+Session ID: 3e9aef1a-a372-429d-87a1-903c80d307bf
 *** Element info: {Using=xpath, value=//*[@resource-id='com.example.svetlana.scheduler:id/log_email_input']}
-19:58:45  INFO  manager.MyListener - element with locator-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/log_email_input'] was found
-19:58:46  INFO  manager.MyListener - start search element by locator:-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/log_email_input']
-19:58:46  INFO  manager.MyListener - There is a problem-&gt;&gt;An element could not be located on the page using the given search parameters.
+08:59:25  INFO  manager.MyListener - element with locator-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/log_email_input'] was found
+08:59:26  INFO  manager.MyListener - start search element by locator:-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/log_email_input']
+08:59:26  INFO  manager.MyListener - There is a problem-&gt;&gt;An element could not be located on the page using the given search parameters.
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '4.0.0-alpha-1', revision: 'd1d3728cae', time: '2019-04-24T13:42:21'
 System info: host: 'ARTEMKA', ip: '192.168.0.103', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_333'
 Driver info: io.appium.java_client.AppiumDriver
 Capabilities {appActivity: .presentation.splashScreen...., appPackage: com.example.svetlana.scheduler, automationName: UiAutomator2, databaseEnabled: false, desired: {appActivity: .presentation.splashScreen...., appPackage: com.example.svetlana.scheduler, automationName: UiAutomator2, deviceName: R58N75HPY8E, platformName: android, platformVersion: 12}, deviceApiLevel: 31, deviceManufacturer: samsung, deviceModel: SM-N985F, deviceName: R58N75HPY8E, deviceScreenDensity: 420, deviceScreenSize: 1080x2316, deviceUDID: R58N75HPY8E, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 2.625, platform: LINUX, platformName: Android, platformVersion: 12, statBarHeight: 67, takesScreenshot: true, viewportRect: {height: 2056, left: 0, top: 67, width: 1080}, warnings: {}, webStorageEnabled: false}
-Session ID: b5d5907c-d5a0-4ca5-95ab-bc33be1f1470
+Session ID: 3e9aef1a-a372-429d-87a1-903c80d307bf
 *** Element info: {Using=xpath, value=//*[@resource-id='com.example.svetlana.scheduler:id/log_email_input']}
-19:58:46  INFO  manager.MyListener - We have a problem --&gt;org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+08:59:26  INFO  manager.MyListener - We have a problem --&gt;org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '4.0.0-alpha-1', revision: 'd1d3728cae', time: '2019-04-24T13:42:21'
 System info: host: 'ARTEMKA', ip: '192.168.0.103', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_333'
 Driver info: io.appium.java_client.AppiumDriver
 Capabilities {appActivity: .presentation.splashScreen...., appPackage: com.example.svetlana.scheduler, automationName: UiAutomator2, databaseEnabled: false, desired: {appActivity: .presentation.splashScreen...., appPackage: com.example.svetlana.scheduler, automationName: UiAutomator2, deviceName: R58N75HPY8E, platformName: android, platformVersion: 12}, deviceApiLevel: 31, deviceManufacturer: samsung, deviceModel: SM-N985F, deviceName: R58N75HPY8E, deviceScreenDensity: 420, deviceScreenSize: 1080x2316, deviceUDID: R58N75HPY8E, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 2.625, platform: LINUX, platformName: Android, platformVersion: 12, statBarHeight: 67, takesScreenshot: true, viewportRect: {height: 2056, left: 0, top: 67, width: 1080}, warnings: {}, webStorageEnabled: false}
-Session ID: b5d5907c-d5a0-4ca5-95ab-bc33be1f1470
+Session ID: 3e9aef1a-a372-429d-87a1-903c80d307bf
 *** Element info: {Using=xpath, value=//*[@resource-id='com.example.svetlana.scheduler:id/log_email_input']}
-19:58:46  INFO  manager.MyListener - element with locator-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/log_email_input'] was found
-19:58:47  INFO  manager.MyListener - start search element by locator:-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/log_email_input']
-19:58:47  INFO  manager.MyListener - element with locator-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/log_email_input'] was found
-19:58:47  INFO  manager.MyListener - start search element by locator:-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/log_email_input']
-19:58:47  INFO  manager.MyListener - element with locator-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/log_email_input'] was found
-19:58:48  INFO  manager.MyListener - start search element by locator:-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/log_email_input']
-19:58:48  INFO  manager.MyListener - element with locator-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/log_email_input'] was found
-19:58:48  INFO  manager.MyListener - start search element by locator:-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/log_email_input']
-19:58:49  INFO  manager.MyListener - element with locator-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/log_email_input'] was found
-19:58:50  INFO  manager.MyListener - start search element by locator:-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/log_password_input']
-19:58:51  INFO  manager.MyListener - element with locator-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/log_password_input'] was found
-19:58:51  INFO  manager.MyListener - start search element by locator:-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/log_password_input']
-19:58:51  INFO  manager.MyListener - element with locator-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/log_password_input'] was found
-19:58:52  INFO  manager.MyListener - start search element by locator:-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/log_password_input']
-19:58:52  INFO  manager.MyListener - element with locator-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/log_password_input'] was found
-19:58:53  INFO  manager.MyListener - start search element by locator:-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/login_btn']
-19:58:54  INFO  manager.MyListener - element with locator-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/login_btn'] was found
-19:58:56  INFO  manager.Configuration - Method to be tested:-&gt;&gt;addNewDirection
-19:58:56  INFO  manager.MyListener - start search element by locator:-&gt;&gt;By.xpath: //*[@content-desc='Open']
-19:58:57  INFO  manager.MyListener - element with locator-&gt;&gt;By.xpath: //*[@content-desc='Open'] was found
-19:58:57  INFO  manager.MyListener - start search element by locator:-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/nav_fr_directions_container']
-19:58:58  INFO  manager.MyListener - element with locator-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/nav_fr_directions_container'] was found
-19:58:59  INFO  manager.MyListener - start search element by locator:-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/directions_list_fab']
-19:59:00  INFO  manager.MyListener - element with locator-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/directions_list_fab'] was found
-19:59:00  INFO  manager.MyListener - start search element by locator:-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/driving_cost_fr_direct_path_from_res']
-19:59:02  INFO  manager.MyListener - element with locator-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/driving_cost_fr_direct_path_from_res'] was found
-19:59:02  INFO  manager.MyListener - start search element by locator:-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/driving_cost_fr_direct_path_from_res']
-19:59:04  INFO  manager.MyListener - element with locator-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/driving_cost_fr_direct_path_from_res'] was found
-19:59:04  INFO  manager.MyListener - start search element by locator:-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/driving_cost_fr_direct_path_from_res']
-19:59:05  INFO  manager.MyListener - element with locator-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/driving_cost_fr_direct_path_from_res'] was found
-19:59:06  INFO  manager.MyListener - start search element by locator:-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/driving_cost_fr_direct_path_to_res']
-19:59:07  INFO  manager.MyListener - element with locator-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/driving_cost_fr_direct_path_to_res'] was found
-19:59:07  INFO  manager.MyListener - start search element by locator:-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/driving_cost_fr_direct_path_to_res']
-19:59:09  INFO  manager.MyListener - element with locator-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/driving_cost_fr_direct_path_to_res'] was found
-19:59:09  INFO  manager.MyListener - start search element by locator:-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/driving_cost_fr_direct_path_to_res']
-19:59:10  INFO  manager.MyListener - element with locator-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/driving_cost_fr_direct_path_to_res'] was found
-19:59:11  INFO  manager.MyListener - start search element by locator:-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/driving_cost_fr_direct_path_num_km_res']
-19:59:12  INFO  manager.MyListener - element with locator-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/driving_cost_fr_direct_path_num_km_res'] was found
-19:59:13  INFO  manager.MyListener - start search element by locator:-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/driving_cost_fr_direct_path_num_km_res']
-19:59:14  INFO  manager.MyListener - element with locator-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/driving_cost_fr_direct_path_num_km_res'] was found
-19:59:14  INFO  manager.MyListener - start search element by locator:-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/driving_cost_fr_direct_path_num_km_res']
-19:59:15  INFO  manager.MyListener - element with locator-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/driving_cost_fr_direct_path_num_km_res'] was found
-19:59:16  INFO  manager.MyListener - start search element by locator:-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/driving_cost_fr_direct_path_car_currency']
-19:59:17  INFO  manager.MyListener - element with locator-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/driving_cost_fr_direct_path_car_currency'] was found
-19:59:17  INFO  manager.MyListener - start search element by locator:-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/currency_row_title']
-19:59:17  INFO  manager.MyListener - element with locator-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/currency_row_title'] was found
-19:59:18  INFO  manager.MyListener - start search element by locator:-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/currency_row_title']
-19:59:18  INFO  manager.MyListener - element with locator-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/currency_row_title'] was found
-19:59:20  INFO  manager.MyListener - start search element by locator:-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/currency_row_title']
-19:59:22  INFO  manager.MyListener - element with locator-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/currency_row_title'] was found
-19:59:23  INFO  manager.MyListener - start search element by locator:-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/driving_cost_fr_direct_path_cost_res']
-19:59:24  INFO  manager.MyListener - element with locator-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/driving_cost_fr_direct_path_cost_res'] was found
-19:59:24  INFO  manager.MyListener - start search element by locator:-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/driving_cost_fr_direct_path_cost_res']
-19:59:25  INFO  manager.MyListener - element with locator-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/driving_cost_fr_direct_path_cost_res'] was found
-19:59:25  INFO  manager.MyListener - start search element by locator:-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/driving_cost_fr_direct_path_cost_res']
-19:59:27  INFO  manager.MyListener - element with locator-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/driving_cost_fr_direct_path_cost_res'] was found
-19:59:28  INFO  manager.MyListener - start search element by locator:-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/driving_cost_fr_save_btn']
-19:59:29  INFO  manager.MyListener - element with locator-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/driving_cost_fr_save_btn'] was found
-19:59:30  INFO  manager.MyListener - start search element by locator:-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/directions_list_fab']
-19:59:30  INFO  manager.MyListener - element with locator-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/directions_list_fab'] was found
-19:59:31  INFO  manager.Configuration - Test named:-&gt;&gt;addNewDirection finished
+08:59:26  INFO  manager.MyListener - element with locator-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/log_email_input'] was found
+08:59:27  INFO  manager.MyListener - start search element by locator:-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/log_email_input']
+08:59:27  INFO  manager.MyListener - element with locator-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/log_email_input'] was found
+08:59:27  INFO  manager.MyListener - start search element by locator:-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/log_email_input']
+08:59:27  INFO  manager.MyListener - element with locator-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/log_email_input'] was found
+08:59:28  INFO  manager.MyListener - start search element by locator:-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/log_email_input']
+08:59:28  INFO  manager.MyListener - element with locator-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/log_email_input'] was found
+08:59:28  INFO  manager.MyListener - start search element by locator:-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/log_email_input']
+08:59:29  INFO  manager.MyListener - element with locator-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/log_email_input'] was found
+08:59:30  INFO  manager.MyListener - start search element by locator:-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/log_password_input']
+08:59:30  INFO  manager.MyListener - element with locator-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/log_password_input'] was found
+08:59:31  INFO  manager.MyListener - start search element by locator:-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/log_password_input']
+08:59:31  INFO  manager.MyListener - element with locator-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/log_password_input'] was found
+08:59:31  INFO  manager.MyListener - start search element by locator:-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/log_password_input']
+08:59:32  INFO  manager.MyListener - element with locator-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/log_password_input'] was found
+08:59:34  INFO  manager.MyListener - start search element by locator:-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/login_btn']
+08:59:34  INFO  manager.MyListener - element with locator-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/login_btn'] was found
+08:59:36  INFO  manager.Configuration - Method to be tested:-&gt;&gt;addNewDirectionData
+08:59:36  INFO  manager.MyListener - start search element by locator:-&gt;&gt;By.xpath: //*[@content-desc='Open']
+08:59:37  INFO  manager.MyListener - element with locator-&gt;&gt;By.xpath: //*[@content-desc='Open'] was found
+08:59:37  INFO  manager.MyListener - start search element by locator:-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/nav_fr_directions_container']
+08:59:39  INFO  manager.MyListener - element with locator-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/nav_fr_directions_container'] was found
+08:59:39  INFO  manager.MyListener - start search element by locator:-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/directions_list_fab']
+08:59:40  INFO  manager.MyListener - element with locator-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/directions_list_fab'] was found
+08:59:41  INFO  manager.MyListener - start search element by locator:-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/driving_cost_fr_direct_path_from_res']
+08:59:42  INFO  manager.MyListener - element with locator-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/driving_cost_fr_direct_path_from_res'] was found
+08:59:42  INFO  manager.MyListener - start search element by locator:-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/driving_cost_fr_direct_path_from_res']
+08:59:44  INFO  manager.MyListener - element with locator-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/driving_cost_fr_direct_path_from_res'] was found
+08:59:44  INFO  manager.MyListener - start search element by locator:-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/driving_cost_fr_direct_path_from_res']
+08:59:45  INFO  manager.MyListener - element with locator-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/driving_cost_fr_direct_path_from_res'] was found
+08:59:46  INFO  manager.MyListener - start search element by locator:-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/driving_cost_fr_direct_path_to_res']
+08:59:47  INFO  manager.MyListener - element with locator-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/driving_cost_fr_direct_path_to_res'] was found
+08:59:47  INFO  manager.MyListener - start search element by locator:-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/driving_cost_fr_direct_path_to_res']
+08:59:48  INFO  manager.MyListener - element with locator-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/driving_cost_fr_direct_path_to_res'] was found
+08:59:48  INFO  manager.MyListener - start search element by locator:-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/driving_cost_fr_direct_path_to_res']
+08:59:49  INFO  manager.MyListener - element with locator-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/driving_cost_fr_direct_path_to_res'] was found
+08:59:50  INFO  manager.MyListener - start search element by locator:-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/driving_cost_fr_direct_path_num_km_res']
+08:59:51  INFO  manager.MyListener - element with locator-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/driving_cost_fr_direct_path_num_km_res'] was found
+08:59:52  INFO  manager.MyListener - start search element by locator:-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/driving_cost_fr_direct_path_num_km_res']
+08:59:53  INFO  manager.MyListener - element with locator-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/driving_cost_fr_direct_path_num_km_res'] was found
+08:59:53  INFO  manager.MyListener - start search element by locator:-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/driving_cost_fr_direct_path_num_km_res']
+08:59:54  INFO  manager.MyListener - element with locator-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/driving_cost_fr_direct_path_num_km_res'] was found
+08:59:55  INFO  manager.MyListener - start search element by locator:-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/driving_cost_fr_direct_path_car_currency']
+08:59:56  INFO  manager.MyListener - element with locator-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/driving_cost_fr_direct_path_car_currency'] was found
+08:59:56  INFO  manager.MyListener - start search element by locator:-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/currency_row_title']
+08:59:56  INFO  manager.MyListener - element with locator-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/currency_row_title'] was found
+08:59:57  INFO  manager.MyListener - start search element by locator:-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/currency_row_title']
+08:59:57  INFO  manager.MyListener - element with locator-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/currency_row_title'] was found
+08:59:59  INFO  manager.MyListener - start search element by locator:-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/currency_row_title']
+09:00:01  INFO  manager.MyListener - element with locator-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/currency_row_title'] was found
+09:00:03  INFO  manager.MyListener - start search element by locator:-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/currency_row_title']
+09:00:04  INFO  manager.MyListener - element with locator-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/currency_row_title'] was found
+09:00:06  INFO  manager.MyListener - start search element by locator:-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/currency_row_title']
+09:00:07  INFO  manager.MyListener - element with locator-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/currency_row_title'] was found
+09:00:09  INFO  manager.MyListener - start search element by locator:-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/currency_row_title']
+09:00:11  INFO  manager.MyListener - element with locator-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/currency_row_title'] was found
+09:00:12  INFO  manager.MyListener - start search element by locator:-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/currency_row_title']
+09:00:14  INFO  manager.MyListener - element with locator-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/currency_row_title'] was found
+09:00:16  INFO  manager.MyListener - start search element by locator:-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/currency_row_title']
+09:00:17  INFO  manager.MyListener - element with locator-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/currency_row_title'] was found
+09:00:19  INFO  manager.MyListener - start search element by locator:-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/currency_row_title']
+09:00:21  INFO  manager.MyListener - element with locator-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/currency_row_title'] was found
+09:00:22  INFO  manager.MyListener - start search element by locator:-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/currency_row_title']
+09:00:24  INFO  manager.MyListener - element with locator-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/currency_row_title'] was found
+09:00:25  INFO  manager.MyListener - start search element by locator:-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/currency_row_title']
+09:00:26  INFO  manager.MyListener - element with locator-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/currency_row_title'] was found
+09:00:27  INFO  manager.MyListener - start search element by locator:-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/currency_row_title']
+09:00:27  INFO  manager.MyListener - element with locator-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/currency_row_title'] was found
+09:00:28  INFO  manager.MyListener - start search element by locator:-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/driving_cost_fr_direct_path_cost_res']
+09:00:29  INFO  manager.MyListener - element with locator-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/driving_cost_fr_direct_path_cost_res'] was found
+09:00:30  INFO  manager.MyListener - start search element by locator:-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/driving_cost_fr_direct_path_cost_res']
+09:00:31  INFO  manager.MyListener - element with locator-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/driving_cost_fr_direct_path_cost_res'] was found
+09:00:31  INFO  manager.MyListener - start search element by locator:-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/driving_cost_fr_direct_path_cost_res']
+09:00:32  INFO  manager.MyListener - element with locator-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/driving_cost_fr_direct_path_cost_res'] was found
+09:00:33  INFO  manager.MyListener - start search element by locator:-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/driving_cost_fr_save_btn']
+09:00:34  INFO  manager.MyListener - element with locator-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/driving_cost_fr_save_btn'] was found
+09:00:34  INFO  manager.MyListener - start search element by locator:-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/directions_list_fab']
+09:00:35  INFO  manager.MyListener - element with locator-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/directions_list_fab'] was found
+09:00:35  INFO  manager.Configuration - Test named:-&gt;&gt;addNewDirectionData finished
+09:00:35  INFO  manager.Configuration - Method to be tested:-&gt;&gt;addNewDirectionData
+09:00:36  INFO  manager.MyListener - start search element by locator:-&gt;&gt;By.xpath: //*[@content-desc='Open']
+09:00:36  INFO  manager.MyListener - element with locator-&gt;&gt;By.xpath: //*[@content-desc='Open'] was found
+09:00:36  INFO  manager.MyListener - start search element by locator:-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/nav_fr_directions_container']
+09:00:38  INFO  manager.MyListener - element with locator-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/nav_fr_directions_container'] was found
+09:00:38  INFO  manager.MyListener - start search element by locator:-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/directions_list_fab']
+09:00:40  INFO  manager.MyListener - element with locator-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/directions_list_fab'] was found
+09:00:40  INFO  manager.MyListener - start search element by locator:-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/driving_cost_fr_direct_path_from_res']
+09:00:41  INFO  manager.MyListener - element with locator-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/driving_cost_fr_direct_path_from_res'] was found
+09:00:41  INFO  manager.MyListener - start search element by locator:-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/driving_cost_fr_direct_path_from_res']
+09:00:43  INFO  manager.MyListener - element with locator-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/driving_cost_fr_direct_path_from_res'] was found
+09:00:43  INFO  manager.MyListener - start search element by locator:-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/driving_cost_fr_direct_path_from_res']
+09:00:44  INFO  manager.MyListener - element with locator-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/driving_cost_fr_direct_path_from_res'] was found
+09:00:45  INFO  manager.MyListener - start search element by locator:-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/driving_cost_fr_direct_path_to_res']
+09:00:46  INFO  manager.MyListener - element with locator-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/driving_cost_fr_direct_path_to_res'] was found
+09:00:47  INFO  manager.MyListener - start search element by locator:-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/driving_cost_fr_direct_path_to_res']
+09:00:47  INFO  manager.MyListener - element with locator-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/driving_cost_fr_direct_path_to_res'] was found
+09:00:47  INFO  manager.MyListener - start search element by locator:-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/driving_cost_fr_direct_path_to_res']
+09:00:48  INFO  manager.MyListener - element with locator-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/driving_cost_fr_direct_path_to_res'] was found
+09:00:49  INFO  manager.MyListener - start search element by locator:-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/driving_cost_fr_direct_path_num_km_res']
+09:00:50  INFO  manager.MyListener - element with locator-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/driving_cost_fr_direct_path_num_km_res'] was found
+09:00:51  INFO  manager.MyListener - start search element by locator:-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/driving_cost_fr_direct_path_num_km_res']
+09:00:52  INFO  manager.MyListener - element with locator-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/driving_cost_fr_direct_path_num_km_res'] was found
+09:00:52  INFO  manager.MyListener - start search element by locator:-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/driving_cost_fr_direct_path_num_km_res']
+09:00:53  INFO  manager.MyListener - element with locator-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/driving_cost_fr_direct_path_num_km_res'] was found
+09:00:54  INFO  manager.MyListener - start search element by locator:-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/driving_cost_fr_direct_path_car_currency']
+09:00:55  INFO  manager.MyListener - element with locator-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/driving_cost_fr_direct_path_car_currency'] was found
+09:00:55  INFO  manager.MyListener - start search element by locator:-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/currency_row_title']
+09:00:56  INFO  manager.MyListener - element with locator-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/currency_row_title'] was found
+09:00:57  INFO  manager.MyListener - start search element by locator:-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/currency_row_title']
+09:00:59  INFO  manager.MyListener - element with locator-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/currency_row_title'] was found
+09:01:00  INFO  manager.MyListener - start search element by locator:-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/currency_row_title']
+09:01:02  INFO  manager.MyListener - element with locator-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/currency_row_title'] was found
+09:01:04  INFO  manager.MyListener - start search element by locator:-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/currency_row_title']
+09:01:05  INFO  manager.MyListener - element with locator-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/currency_row_title'] was found
+09:01:07  INFO  manager.MyListener - start search element by locator:-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/driving_cost_fr_direct_path_cost_res']
+09:01:08  INFO  manager.MyListener - element with locator-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/driving_cost_fr_direct_path_cost_res'] was found
+09:01:09  INFO  manager.MyListener - start search element by locator:-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/driving_cost_fr_direct_path_cost_res']
+09:01:09  INFO  manager.MyListener - element with locator-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/driving_cost_fr_direct_path_cost_res'] was found
+09:01:09  INFO  manager.MyListener - start search element by locator:-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/driving_cost_fr_direct_path_cost_res']
+09:01:10  INFO  manager.MyListener - element with locator-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/driving_cost_fr_direct_path_cost_res'] was found
+09:01:12  INFO  manager.MyListener - start search element by locator:-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/driving_cost_fr_save_btn']
+09:01:13  INFO  manager.MyListener - element with locator-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/driving_cost_fr_save_btn'] was found
+09:01:14  INFO  manager.MyListener - start search element by locator:-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/directions_list_fab']
+09:01:14  INFO  manager.MyListener - element with locator-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/directions_list_fab'] was found
+09:01:14  INFO  manager.Configuration - Test named:-&gt;&gt;addNewDirectionData finished
+09:01:14  INFO  manager.Configuration - Method to be tested:-&gt;&gt;addNewDirectionData
+09:01:14  INFO  manager.MyListener - start search element by locator:-&gt;&gt;By.xpath: //*[@content-desc='Open']
+09:01:15  INFO  manager.MyListener - element with locator-&gt;&gt;By.xpath: //*[@content-desc='Open'] was found
+09:01:15  INFO  manager.MyListener - start search element by locator:-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/nav_fr_directions_container']
+09:01:17  INFO  manager.MyListener - element with locator-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/nav_fr_directions_container'] was found
+09:01:17  INFO  manager.MyListener - start search element by locator:-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/directions_list_fab']
+09:01:19  INFO  manager.MyListener - element with locator-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/directions_list_fab'] was found
+09:01:19  INFO  manager.MyListener - start search element by locator:-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/driving_cost_fr_direct_path_from_res']
+09:01:20  INFO  manager.MyListener - element with locator-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/driving_cost_fr_direct_path_from_res'] was found
+09:01:21  INFO  manager.MyListener - start search element by locator:-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/driving_cost_fr_direct_path_from_res']
+09:01:22  INFO  manager.MyListener - element with locator-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/driving_cost_fr_direct_path_from_res'] was found
+09:01:22  INFO  manager.MyListener - start search element by locator:-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/driving_cost_fr_direct_path_from_res']
+09:01:23  INFO  manager.MyListener - element with locator-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/driving_cost_fr_direct_path_from_res'] was found
+09:01:24  INFO  manager.MyListener - start search element by locator:-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/driving_cost_fr_direct_path_to_res']
+09:01:25  INFO  manager.MyListener - element with locator-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/driving_cost_fr_direct_path_to_res'] was found
+09:01:26  INFO  manager.MyListener - start search element by locator:-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/driving_cost_fr_direct_path_to_res']
+09:01:27  INFO  manager.MyListener - element with locator-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/driving_cost_fr_direct_path_to_res'] was found
+09:01:27  INFO  manager.MyListener - start search element by locator:-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/driving_cost_fr_direct_path_to_res']
+09:01:28  INFO  manager.MyListener - element with locator-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/driving_cost_fr_direct_path_to_res'] was found
+09:01:29  INFO  manager.MyListener - start search element by locator:-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/driving_cost_fr_direct_path_num_km_res']
+09:01:30  INFO  manager.MyListener - element with locator-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/driving_cost_fr_direct_path_num_km_res'] was found
+09:01:31  INFO  manager.MyListener - start search element by locator:-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/driving_cost_fr_direct_path_num_km_res']
+09:01:31  INFO  manager.MyListener - element with locator-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/driving_cost_fr_direct_path_num_km_res'] was found
+09:01:31  INFO  manager.MyListener - start search element by locator:-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/driving_cost_fr_direct_path_num_km_res']
+09:01:33  INFO  manager.MyListener - element with locator-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/driving_cost_fr_direct_path_num_km_res'] was found
+09:01:33  INFO  manager.MyListener - start search element by locator:-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/driving_cost_fr_direct_path_car_currency']
+09:01:35  INFO  manager.MyListener - element with locator-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/driving_cost_fr_direct_path_car_currency'] was found
+09:01:35  INFO  manager.MyListener - start search element by locator:-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/currency_row_title']
+09:01:36  INFO  manager.MyListener - element with locator-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/currency_row_title'] was found
+09:01:37  INFO  manager.MyListener - start search element by locator:-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/currency_row_title']
+09:01:39  INFO  manager.MyListener - element with locator-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/currency_row_title'] was found
+09:01:41  INFO  manager.MyListener - start search element by locator:-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/driving_cost_fr_direct_path_cost_res']
+09:01:41  INFO  manager.MyListener - element with locator-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/driving_cost_fr_direct_path_cost_res'] was found
+09:01:42  INFO  manager.MyListener - start search element by locator:-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/driving_cost_fr_direct_path_cost_res']
+09:01:43  INFO  manager.MyListener - element with locator-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/driving_cost_fr_direct_path_cost_res'] was found
+09:01:43  INFO  manager.MyListener - start search element by locator:-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/driving_cost_fr_direct_path_cost_res']
+09:01:44  INFO  manager.MyListener - element with locator-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/driving_cost_fr_direct_path_cost_res'] was found
+09:01:46  INFO  manager.MyListener - start search element by locator:-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/driving_cost_fr_save_btn']
+09:01:46  INFO  manager.MyListener - element with locator-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/driving_cost_fr_save_btn'] was found
+09:01:47  INFO  manager.MyListener - start search element by locator:-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/directions_list_fab']
+09:01:48  INFO  manager.MyListener - element with locator-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/directions_list_fab'] was found
+09:01:48  INFO  manager.Configuration - Test named:-&gt;&gt;addNewDirectionData finished
+09:01:48  INFO  manager.Configuration - Method to be tested:-&gt;&gt;addNewDirectionData
+09:01:48  INFO  manager.MyListener - start search element by locator:-&gt;&gt;By.xpath: //*[@content-desc='Open']
+09:01:49  INFO  manager.MyListener - element with locator-&gt;&gt;By.xpath: //*[@content-desc='Open'] was found
+09:01:49  INFO  manager.MyListener - start search element by locator:-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/nav_fr_directions_container']
+09:01:50  INFO  manager.MyListener - element with locator-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/nav_fr_directions_container'] was found
+09:01:50  INFO  manager.MyListener - start search element by locator:-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/directions_list_fab']
+09:01:52  INFO  manager.MyListener - element with locator-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/directions_list_fab'] was found
+09:01:52  INFO  manager.MyListener - start search element by locator:-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/driving_cost_fr_direct_path_from_res']
+09:01:54  INFO  manager.MyListener - element with locator-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/driving_cost_fr_direct_path_from_res'] was found
+09:01:55  INFO  manager.MyListener - start search element by locator:-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/driving_cost_fr_direct_path_from_res']
+09:01:55  INFO  manager.MyListener - element with locator-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/driving_cost_fr_direct_path_from_res'] was found
+09:01:55  INFO  manager.MyListener - start search element by locator:-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/driving_cost_fr_direct_path_from_res']
+09:01:57  INFO  manager.MyListener - element with locator-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/driving_cost_fr_direct_path_from_res'] was found
+09:01:57  INFO  manager.MyListener - start search element by locator:-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/driving_cost_fr_direct_path_to_res']
+09:01:59  INFO  manager.MyListener - element with locator-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/driving_cost_fr_direct_path_to_res'] was found
+09:01:59  INFO  manager.MyListener - start search element by locator:-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/driving_cost_fr_direct_path_to_res']
+09:02:00  INFO  manager.MyListener - element with locator-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/driving_cost_fr_direct_path_to_res'] was found
+09:02:00  INFO  manager.MyListener - start search element by locator:-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/driving_cost_fr_direct_path_to_res']
+09:02:02  INFO  manager.MyListener - element with locator-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/driving_cost_fr_direct_path_to_res'] was found
+09:02:02  INFO  manager.MyListener - start search element by locator:-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/driving_cost_fr_direct_path_num_km_res']
+09:02:04  INFO  manager.MyListener - element with locator-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/driving_cost_fr_direct_path_num_km_res'] was found
+09:02:04  INFO  manager.MyListener - start search element by locator:-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/driving_cost_fr_direct_path_num_km_res']
+09:02:05  INFO  manager.MyListener - element with locator-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/driving_cost_fr_direct_path_num_km_res'] was found
+09:02:05  INFO  manager.MyListener - start search element by locator:-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/driving_cost_fr_direct_path_num_km_res']
+09:02:06  INFO  manager.MyListener - element with locator-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/driving_cost_fr_direct_path_num_km_res'] was found
+09:02:07  INFO  manager.MyListener - start search element by locator:-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/driving_cost_fr_direct_path_car_currency']
+09:02:08  INFO  manager.MyListener - element with locator-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/driving_cost_fr_direct_path_car_currency'] was found
+09:02:09  INFO  manager.MyListener - start search element by locator:-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/currency_row_title']
+09:02:09  INFO  manager.MyListener - element with locator-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/currency_row_title'] was found
+09:02:09  INFO  manager.MyListener - start search element by locator:-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/currency_row_title']
+09:02:10  INFO  manager.MyListener - element with locator-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/currency_row_title'] was found
+09:02:11  INFO  manager.MyListener - start search element by locator:-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/currency_row_title']
+09:02:13  INFO  manager.MyListener - element with locator-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/currency_row_title'] was found
+09:02:14  INFO  manager.MyListener - start search element by locator:-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/currency_row_title']
+09:02:16  INFO  manager.MyListener - element with locator-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/currency_row_title'] was found
+09:02:18  INFO  manager.MyListener - start search element by locator:-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/currency_row_title']
+09:02:19  INFO  manager.MyListener - element with locator-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/currency_row_title'] was found
+09:02:21  INFO  manager.MyListener - start search element by locator:-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/currency_row_title']
+09:02:22  INFO  manager.MyListener - element with locator-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/currency_row_title'] was found
+09:02:24  INFO  manager.MyListener - start search element by locator:-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/currency_row_title']
+09:02:26  INFO  manager.MyListener - element with locator-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/currency_row_title'] was found
+09:02:27  INFO  manager.MyListener - start search element by locator:-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/currency_row_title']
+09:02:29  INFO  manager.MyListener - element with locator-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/currency_row_title'] was found
+09:02:30  INFO  manager.MyListener - start search element by locator:-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/currency_row_title']
+09:02:32  INFO  manager.MyListener - element with locator-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/currency_row_title'] was found
+09:02:34  INFO  manager.MyListener - start search element by locator:-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/driving_cost_fr_direct_path_cost_res']
+09:02:34  INFO  manager.MyListener - element with locator-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/driving_cost_fr_direct_path_cost_res'] was found
+09:02:35  INFO  manager.MyListener - start search element by locator:-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/driving_cost_fr_direct_path_cost_res']
+09:02:36  INFO  manager.MyListener - element with locator-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/driving_cost_fr_direct_path_cost_res'] was found
+09:02:36  INFO  manager.MyListener - start search element by locator:-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/driving_cost_fr_direct_path_cost_res']
+09:02:37  INFO  manager.MyListener - element with locator-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/driving_cost_fr_direct_path_cost_res'] was found
+09:02:38  INFO  manager.MyListener - start search element by locator:-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/driving_cost_fr_save_btn']
+09:02:39  INFO  manager.MyListener - element with locator-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/driving_cost_fr_save_btn'] was found
+09:02:40  INFO  manager.MyListener - start search element by locator:-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/directions_list_fab']
+09:02:40  INFO  manager.MyListener - element with locator-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/directions_list_fab'] was found
+09:02:40  INFO  manager.Configuration - Test named:-&gt;&gt;addNewDirectionData finished
+09:02:40  INFO  manager.Configuration - Method to be tested:-&gt;&gt;addNewDirectionData
+09:02:41  INFO  manager.MyListener - start search element by locator:-&gt;&gt;By.xpath: //*[@content-desc='Open']
+09:02:41  INFO  manager.MyListener - element with locator-&gt;&gt;By.xpath: //*[@content-desc='Open'] was found
+09:02:41  INFO  manager.MyListener - start search element by locator:-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/nav_fr_directions_container']
+09:02:43  INFO  manager.MyListener - element with locator-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/nav_fr_directions_container'] was found
+09:02:43  INFO  manager.MyListener - start search element by locator:-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/directions_list_fab']
+09:02:44  INFO  manager.MyListener - element with locator-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/directions_list_fab'] was found
+09:02:44  INFO  manager.MyListener - start search element by locator:-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/driving_cost_fr_direct_path_from_res']
+09:02:46  INFO  manager.MyListener - element with locator-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/driving_cost_fr_direct_path_from_res'] was found
+09:02:47  INFO  manager.MyListener - start search element by locator:-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/driving_cost_fr_direct_path_from_res']
+09:02:47  INFO  manager.MyListener - element with locator-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/driving_cost_fr_direct_path_from_res'] was found
+09:02:47  INFO  manager.MyListener - start search element by locator:-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/driving_cost_fr_direct_path_from_res']
+09:02:49  INFO  manager.MyListener - element with locator-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/driving_cost_fr_direct_path_from_res'] was found
+09:02:49  INFO  manager.MyListener - start search element by locator:-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/driving_cost_fr_direct_path_to_res']
+09:02:51  INFO  manager.MyListener - element with locator-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/driving_cost_fr_direct_path_to_res'] was found
+09:02:51  INFO  manager.MyListener - start search element by locator:-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/driving_cost_fr_direct_path_to_res']
+09:02:52  INFO  manager.MyListener - element with locator-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/driving_cost_fr_direct_path_to_res'] was found
+09:02:52  INFO  manager.MyListener - start search element by locator:-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/driving_cost_fr_direct_path_to_res']
+09:02:54  INFO  manager.MyListener - element with locator-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/driving_cost_fr_direct_path_to_res'] was found
+09:02:54  INFO  manager.MyListener - start search element by locator:-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/driving_cost_fr_direct_path_num_km_res']
+09:02:55  INFO  manager.MyListener - element with locator-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/driving_cost_fr_direct_path_num_km_res'] was found
+09:02:56  INFO  manager.MyListener - start search element by locator:-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/driving_cost_fr_direct_path_num_km_res']
+09:02:56  INFO  manager.MyListener - element with locator-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/driving_cost_fr_direct_path_num_km_res'] was found
+09:02:57  INFO  manager.MyListener - start search element by locator:-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/driving_cost_fr_direct_path_num_km_res']
+09:02:58  INFO  manager.MyListener - element with locator-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/driving_cost_fr_direct_path_num_km_res'] was found
+09:02:59  INFO  manager.MyListener - start search element by locator:-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/driving_cost_fr_direct_path_car_currency']
+09:03:00  INFO  manager.MyListener - element with locator-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/driving_cost_fr_direct_path_car_currency'] was found
+09:03:00  INFO  manager.MyListener - start search element by locator:-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/currency_row_title']
+09:03:01  INFO  manager.MyListener - element with locator-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/currency_row_title'] was found
+09:03:03  INFO  manager.MyListener - start search element by locator:-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/currency_row_title']
+09:03:04  INFO  manager.MyListener - element with locator-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/currency_row_title'] was found
+09:03:06  INFO  manager.MyListener - start search element by locator:-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/currency_row_title']
+09:03:07  INFO  manager.MyListener - element with locator-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/currency_row_title'] was found
+09:03:09  INFO  manager.MyListener - start search element by locator:-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/currency_row_title']
+09:03:11  INFO  manager.MyListener - element with locator-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/currency_row_title'] was found
+09:03:12  INFO  manager.MyListener - start search element by locator:-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/driving_cost_fr_direct_path_cost_res']
+09:03:13  INFO  manager.MyListener - element with locator-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/driving_cost_fr_direct_path_cost_res'] was found
+09:03:14  INFO  manager.MyListener - start search element by locator:-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/driving_cost_fr_direct_path_cost_res']
+09:03:15  INFO  manager.MyListener - element with locator-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/driving_cost_fr_direct_path_cost_res'] was found
+09:03:15  INFO  manager.MyListener - start search element by locator:-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/driving_cost_fr_direct_path_cost_res']
+09:03:16  INFO  manager.MyListener - element with locator-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/driving_cost_fr_direct_path_cost_res'] was found
+09:03:18  INFO  manager.MyListener - start search element by locator:-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/driving_cost_fr_save_btn']
+09:03:18  INFO  manager.MyListener - element with locator-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/driving_cost_fr_save_btn'] was found
+09:03:19  INFO  manager.MyListener - start search element by locator:-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/directions_list_fab']
+09:03:20  INFO  manager.MyListener - element with locator-&gt;&gt;By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/directions_list_fab'] was found
+09:03:20  INFO  manager.Configuration - Test named:-&gt;&gt;addNewDirectionData finished
 </pre>
 </span>
 </div>
@@ -230,7 +458,7 @@ Session ID: b5d5907c-d5a0-4ca5-95ab-bc33be1f1470
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 7.4</a> at 24.07.2022 19:59:31</p>
+<a href="http://www.gradle.org">Gradle 7.4</a> at 25.07.2022 9:03:23</p>
 </div>
 </div>
 </body>

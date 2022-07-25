@@ -94,7 +94,7 @@ public class HomeScreen extends BaseScreen {
         int finishAmount = events.size();
         logger.info("'Finished with Amount of events = ' " + finishAmount);
         Assert.assertTrue(checkIfEventDeleted(startAmount, finishAmount));
-        return new HomeScreen(driver);
+        return this;
     }
 
     public HomeScreen deleteAllContacts() {
@@ -110,7 +110,7 @@ public class HomeScreen extends BaseScreen {
         Assert.assertEquals(finishAmountContacts, 0);
         logger.info("All contacts deleted");
 
-        return new HomeScreen(driver);
+        return this;
     }
 
 

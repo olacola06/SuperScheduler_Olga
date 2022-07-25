@@ -2,6 +2,7 @@ package screens;
 
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileElement;
+import models.Direction;
 import org.openqa.selenium.support.FindBy;
 import org.testng.Assert;
 
@@ -33,16 +34,35 @@ public class Directions extends BaseScreen {
 
     public Directions addDirection(String from,String to,String numberKm, String cost, String currency){
         plusBtnDirections.click();
+        feelDetails(from,to,numberKm,cost,currency);
+        addButton.click();
+        Assert.assertTrue(plusBtnDirections.isDisplayed());
+
+        return this;
+    }
+    public Directions addDirectionLombok(Direction dir){
+        plusBtnDirections.click();
+        feelDetailsLB(dir);
+        addButton.click();
+        Assert.assertTrue(plusBtnDirections.isDisplayed());
+
+        return this;
+    }
+    private void feelDetails(String from,String to,String numberKm, String cost, String currency){
         type(placeFrom,from);
         type(placeTo,to);
         typeInt(numberOfKm, numberKm);
         chooseCurrencyMethod(currency);
         typeInt(costPerKm, cost);
         driver.hideKeyboard();
-        addButton.click();
-        Assert.assertTrue(plusBtnDirections.isDisplayed());
-
-        return new Directions(driver);
+    }
+    private void feelDetailsLB(Direction dir){
+        type(placeFrom,dir.getFrom());
+        type(placeTo,dir.getTo());
+        typeInt(numberOfKm, dir.getNumberKm());
+        chooseCurrencyMethod(dir.getCurrency());
+        typeInt(costPerKm, dir.getCost());
+        driver.hideKeyboard();
     }
     public void chooseCurrencyMethod(String countryOfCurrency) {
         chooseCurrency.click();
